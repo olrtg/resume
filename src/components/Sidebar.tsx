@@ -8,7 +8,7 @@ const Sidebar = () => {
   ] as const
 
   return (
-    <aside className="space-y-4">
+    <aside className="space-y-4 lg:text-left text-center">
       <div id="basic">
         <h1 className="text-2xl font-bold">José Olórtegui</h1>
         <p>Frontend Developer</p>
@@ -16,7 +16,7 @@ const Sidebar = () => {
       <div id="contact">
         <a href="mailto:jolortegui98@gmail.com" className="text-link">jolortegui98@gmail.com</a>
       </div>
-      <div id="socials" className="flex items-center space-x-4">
+      <div id="socials" className="flex lg:justify-start justify-center items-center space-x-4">
         {socials.map(({ url, icon }) => (
           <a href={url} target="_blank" rel="noreferrer" key={url} className="text-lg">{icon}</a>
         ))}

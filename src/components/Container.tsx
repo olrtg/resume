@@ -3,6 +3,7 @@ interface Props {
 }
 
 const Container = ({ children }: Props) =>
-  <div className="p-8">{children}</div>
+  <div className="lg:p-8 p-6">{children}</div>
 
 export default Container
+

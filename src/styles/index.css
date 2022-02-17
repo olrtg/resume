@@ -32,7 +32,11 @@ ul {
 
 ul li:before {
   content: "♦";
-  @apply text-green-800 text-sm pl-4 pr-2;
+  @apply text-green-800 text-sm pr-2;
+}
+
+ul li {
+  @apply pl-4;
 }
 
 small {

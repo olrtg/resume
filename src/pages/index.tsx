@@ -5,14 +5,14 @@ import { Platforms } from '~/utils/socials'
 
 function Index() {
   return (
-    <main className="flex max-w-6xl mx-auto">
-      <div className="w-1/4">
+    <main className="flex lg:flex-row flex-col max-w-6xl mx-auto">
+      <div className="w-full lg:w-1/4">
         <Container>
           <Sidebar />
         </Container>
       </div>
 
-      <div className="w-3/4">
+      <div className="w-full lg:w-3/4">
         <Container>
           <div className="space-y-8">
             <section>
@@ -158,7 +158,7 @@ function Index() {
                 a more consistent basis.
               </p>
               <p>My own projects:</p>
-              <div className="grid grid-cols-2 gap-8">
+              <div className="grid grid-cols-2 gap-4 sm:gap-8">
                 <div>
                   <h3 className="font-semibold">Venus</h3>
                   <p className="!mb-2">
