@@ -25,7 +25,7 @@ function Index() {
                 heavy believer in craftmanship.
               </p>
               <p>
-                In my spare time, most of the time, you will find me playing
+                In my spare time, most of the times, you will find me playing
                 games or coding something.
               </p>
             </section>
