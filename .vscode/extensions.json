@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "antfu.iconify",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
+    "silvenon.mdx"
+  ]
+}
