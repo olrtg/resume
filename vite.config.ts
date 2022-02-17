@@ -11,17 +11,17 @@ import IconsResolver from 'unplugin-icons/resolver'
 export default defineConfig(async () => {
   const mdx = await import('@mdx-js/rollup')
 
-  return { 
+  return {
     resolve: {
       alias: {
         '~/': `${path.resolve(__dirname, 'src')}/`,
-        'react/jsx-runtime': 'react/jsx-runtime.js'
+        'react/jsx-runtime': 'react/jsx-runtime.js',
       },
     },
     plugins: [
       react(),
       Pages({
-        extensions: ['tsx', 'mdx']
+        extensions: ['tsx', 'mdx'],
       }),
       mdx.default(),
       VitePWA({
@@ -52,16 +52,8 @@ export default defineConfig(async () => {
         },
       }),
       AutoImport({
-        imports: [
-          'react',
-          'react-router-dom',
-        ],
+        imports: ['react', 'react-router-dom'],
         dts: 'src/auto-imports.d.ts',
-        eslintrc: {
-          enabled: true,
-          filepath: './.eslintrc-auto-import.json',
-          globalsPropValue: 'readonly',
-        },
         resolvers: [
           IconsResolver({
             prefix: 'Icon',
