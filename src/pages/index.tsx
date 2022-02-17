@@ -158,7 +158,7 @@ function Index() {
                 a more consistent basis.
               </p>
               <p>My own projects:</p>
-              <div className="grid grid-cols-2 gap-4 sm:gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
                 <div>
                   <h3 className="font-semibold">Venus</h3>
                   <p className="!mb-2">
@@ -202,6 +202,12 @@ function Index() {
               <p>Spanish (Native speaker), English (Intermediate).</p>
             </section>
           </div>
+
+          <footer className="mt-8 text-center print:hidden">
+            <button onClick={() => window.print()} className="text-link">
+              PDF Version
+            </button>
+          </footer>
         </Container>
       </div>
     </main>

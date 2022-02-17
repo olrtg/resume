@@ -10,15 +10,18 @@ body.dark {
   @apply bg-stone-900 text-stone-200;
 }
 
-a {
+a,
+button {
   @apply cursor-pointer text-stone-500 transition-colors;
 }
 
-a.text-link {
+a.text-link,
+button.text-link {
   @apply border-b border-dashed;
 }
 
-a:hover {
+a:hover,
+button:hover {
   @apply text-green-800 border-green-800;
 }
 
