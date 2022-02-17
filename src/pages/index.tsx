@@ -59,12 +59,12 @@ function Index() {
                   </p>
                   <ul>
                     <li>
-                      Helped to solve issues with implementations that didn't
-                      allow the team to make progress.
+                      Helped to solve issues with implementations that
+                      didn&apos;t allow the team to make progress.
                     </li>
                     <li>
                       Research and implement new tecnologies, metodologies or
-                      tools into the team's workflow.
+                      tools into the team&apos;s workflow.
                     </li>
                     <li>Train and advise new teammates.</li>
                   </ul>
@@ -131,6 +131,7 @@ function Index() {
                   <a
                     href={`${Platforms.GitHub}/dotfiles`}
                     target="_blank"
+                    rel="noreferrer"
                     className="text-link"
                   >
                     dotfiles
@@ -174,18 +175,20 @@ function Index() {
                 <div>
                   <h3 className="font-semibold">bulma-fab-button</h3>
                   <p className="!mb-2">
-                    A Bulma's extension for FABs (Floating Action Buttons)
+                    A Bulma&apos;s extension for FABs (Floating Action Buttons)
                   </p>
                   <div className="flex space-x-4 text-lg">
                     <a
                       href="https://www.npmjs.com/package/bulma-fab-button"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <IconIonLogoNpm />
                     </a>
                     <a
                       href="https://github.com/olrtg/bulma-fab-button"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <IconIonLogoGithub />
                     </a>

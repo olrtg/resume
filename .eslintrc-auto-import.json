@@ -1,0 +1,33 @@
+{
+  "globals": {
+    "IconIonLogoGithub": "readonly",
+    "IconIonLogoLinkedin": "readonly",
+    "IconIonLogoNpm": "readonly",
+    "IconIonLogoTwitter": "readonly",
+    "Link": "readonly",
+    "Navigate": "readonly",
+    "NavLink": "readonly",
+    "Outlet": "readonly",
+    "Route": "readonly",
+    "Routes": "readonly",
+    "useCallback": "readonly",
+    "useContext": "readonly",
+    "useEffect": "readonly",
+    "useHref": "readonly",
+    "useInRouterContext": "readonly",
+    "useLinkClickHandler": "readonly",
+    "useLocation": "readonly",
+    "useMemo": "readonly",
+    "useNavigate": "readonly",
+    "useNavigationType": "readonly",
+    "useOutlet": "readonly",
+    "useOutletContext": "readonly",
+    "useParams": "readonly",
+    "useReducer": "readonly",
+    "useRef": "readonly",
+    "useResolvedPath": "readonly",
+    "useRoutes": "readonly",
+    "useSearchParams": "readonly",
+    "useState": "readonly"
+  }
+}
