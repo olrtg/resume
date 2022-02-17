@@ -199,7 +199,7 @@ function Index() {
 
             <section>
               <Title>Languages</Title>
-              <p>Spanish (Native speaker), English (Intermediate).</p>
+              <p>Spanish (Native speaker), English (B2 Upper Intermediate).</p>
             </section>
           </div>
 
