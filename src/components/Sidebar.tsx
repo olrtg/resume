@@ -14,11 +14,24 @@ const Sidebar = () => {
         <p>Frontend Developer</p>
       </div>
       <div id="contact">
-        <a href="mailto:jolortegui98@gmail.com" className="text-link">jolortegui98@gmail.com</a>
+        <a href="mailto:jolortegui98@gmail.com" className="text-link">
+          jolortegui98@gmail.com
+        </a>
       </div>
-      <div id="socials" className="flex lg:justify-start justify-center items-center space-x-4">
+      <div
+        id="socials"
+        className="flex lg:justify-start justify-center items-center space-x-4"
+      >
         {socials.map(({ url, icon }) => (
-          <a href={url} target="_blank" rel="noreferrer" key={url} className="text-lg">{icon}</a>
+          <a
+            href={url}
+            target="_blank"
+            rel="noreferrer"
+            key={url}
+            className="text-lg"
+          >
+            {icon}
+          </a>
         ))}
       </div>
     </aside>
