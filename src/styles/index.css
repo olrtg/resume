@@ -6,10 +6,6 @@ body {
   @apply bg-stone-100 text-stone-800 antialiased;
 }
 
-body.dark {
-  @apply bg-stone-900 text-stone-200;
-}
-
 a,
 button {
   @apply cursor-pointer text-stone-500 transition-colors;
@@ -44,4 +40,23 @@ ul li {
 
 small {
   @apply text-sm;
+}
+
+/* Dark mode */
+html.dark body {
+  @apply bg-stone-900 text-stone-100;
+}
+
+html.dark a,
+html.dark button {
+  @apply text-stone-200;
+}
+
+html.dark a:hover,
+html.dark button:hover {
+  @apply text-green-400 border-green-400;
+}
+
+html.dark ul li:before {
+  @apply text-green-400;
 }
