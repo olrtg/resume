@@ -34,7 +34,7 @@ ul {
 }
 
 ul li:before {
-  content: "♦";
+  content: "◆";
   @apply text-green-800 text-sm pr-2;
 }
 
