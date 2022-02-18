@@ -19,7 +19,7 @@ function Index() {
               <Title>About me</Title>
               <p>
                 Hello! My name is José Olórtegui, a self-taught developer and a
-                freelance frontend developer. I specialize in frontend web
+                freelance frontend developer living in Paraguay. I specialize in frontend web
                 technologies and i like to take care of the experience,
                 architecture and code quality of the things I build. I am a
                 heavy believer in craftmanship.
