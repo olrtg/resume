@@ -28,8 +28,8 @@ export default defineConfig(async () => {
         registerType: 'autoUpdate',
         includeAssets: ['favicon.png', 'robots.txt', 'safari-pinned-tab.png'],
         manifest: {
-          name: 'Venus',
-          short_name: 'Venus',
+          name: 'José Olórtegui',
+          short_name: 'José Olórtegui',
           theme_color: '#ffffff',
           icons: [
             {
