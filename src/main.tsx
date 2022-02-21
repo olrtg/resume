@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, useRoutes } from 'react-router-dom'
 import routes from '~react-pages'
 
-// your custom styles here
+import './i18n'
+
 import './styles/index.css'
 
 function App() {
