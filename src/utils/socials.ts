@@ -5,4 +5,3 @@ export enum Platforms {
 }
 
 export const getSocial = (platform: Platforms) => platform
-

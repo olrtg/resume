@@ -1,8 +1,11 @@
 import { useTranslation } from 'react-i18next'
+
 import Sidebar from '~/components/Sidebar'
 import Container from '~/components/Container'
 import Header from '~/components/Header'
 import Title from '~/components/Title'
+
+import type { Position } from '~/types/position'
 
 function Index() {
   const [t] = useTranslation()
@@ -22,52 +25,52 @@ function Index() {
             <div className="space-y-8">
               <section>
                 <Title>{t('about_me.title')}</Title>
-                {t('about_me.content', { returnObjects: true }).map(
-                  (text: string, index: number) => (
-                    <p key={index}>{text}</p>
-                  ),
-                )}
+                {t<string, string[]>('about_me.content', {
+                  returnObjects: true,
+                }).map((text, index) => (
+                  <p key={index}>{text}</p>
+                ))}
               </section>
 
               <section>
                 <Title>{t('work_experience.title')}</Title>
                 <div className="space-y-6">
-                  {t('work_experience.positions', { returnObjects: true }).map(
-                    (position: any, index: number) => (
-                      <div key={index}>
-                        <h3 className="font-semibold">{position.title}</h3>
-                        <p>
-                          <small>{position.duration}</small>
-                        </p>
-                        <ul>
-                          {position.tasks.map((task: string, index: number) => (
-                            <li key={index}>{task}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    ),
-                  )}
+                  {t<string, Position[]>('work_experience.positions', {
+                    returnObjects: true,
+                  }).map((position, index) => (
+                    <div key={index}>
+                      <h3 className="font-semibold">{position.title}</h3>
+                      <p>
+                        <small>{position.duration}</small>
+                      </p>
+                      <ul>
+                        {position.tasks.map((task, index) => (
+                          <li key={index}>{task}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </div>
               </section>
 
               <section>
                 <Title>{t('skills_stack.title')}</Title>
                 <ul>
-                  {t('skills_stack.content', { returnObjects: true }).map(
-                    (text: string, index: number) => (
-                      <li key={index}>{text}</li>
-                    ),
-                  )}
+                  {t<string, string[]>('skills_stack.content', {
+                    returnObjects: true,
+                  }).map((text, index) => (
+                    <li key={index}>{text}</li>
+                  ))}
                 </ul>
               </section>
 
               <section>
                 <Title>{t('open_source.title')}</Title>
-                {t('open_source.description', { returnObjects: true }).map(
-                  (text: string, index: number) => (
-                    <p key={index}>{text}</p>
-                  ),
-                )}
+                {t<string, string[]>('open_source.description', {
+                  returnObjects: true,
+                }).map((text, index) => (
+                  <p key={index}>{text}</p>
+                ))}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
                   <div>
                     <h3 className="font-semibold">Venus</h3>
