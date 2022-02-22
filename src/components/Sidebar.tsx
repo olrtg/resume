@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next'
 import { Platforms, getSocial } from '~/utils/socials'
 
 const Sidebar = () => {
+  const [t] = useTranslation()
+
   const socials = [
     { url: getSocial(Platforms.LinkedIn), icon: <IconIonLogoLinkedin /> },
     { url: getSocial(Platforms.GitHub), icon: <IconIonLogoGithub /> },
@@ -11,7 +14,7 @@ const Sidebar = () => {
     <aside className="space-y-4 lg:text-left text-center">
       <div id="basic">
         <h1 className="text-2xl font-bold">José Olórtegui</h1>
-        <p>Frontend Developer</p>
+        <p>{t('basic.position')}</p>
       </div>
       <div id="contact">
         <a href="mailto:jolortegui98@gmail.com" className="text-link">
