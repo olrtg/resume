@@ -2,33 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.png" />
-    <link rel="apple-touch-icon" href="/pwa-192x192.png">
-    <link rel="mask-icon" href="/safari-pinned-tab.png" color="#00aba9">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="/pwa-192x192.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.png" color="#00aba9" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <title>José Olórtegui - Résumé</title>
+    <meta
+      name="description"
+      content="Hola! Mi nombre es José Olórtegui, un desarrollador frontend autodidacta y freelance viviendo en Paraguay. Me especializo en tecnologías web frontend y me gusta cuidar de la experiencia, arquitectura y la calidad del código de las cosas que desarrollo. Soy un fuerte creyente de la artesanía."
+    />
   </head>
   <body>
     <div id="root"></div>
     <script>
-    (function() {
-      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-      const setting = localStorage.getItem('color-schema') || 'auto'
-      if (setting === 'dark' || (prefersDark && setting !== 'light'))
-        document.documentElement.classList.toggle('dark', true)
+      ;(function () {
+        const prefersDark =
+          window.matchMedia &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches
+        const setting = localStorage.getItem('color-schema') || 'auto'
+        if (setting === 'dark' || (prefersDark && setting !== 'light'))
+          document.documentElement.classList.toggle('dark', true)
         if (setting === 'auto') {
           localStorage.setItem('color-schema', 'light')
         }
-    })()
-  </script>
+      })()
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
