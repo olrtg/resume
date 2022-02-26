@@ -65,7 +65,6 @@ export const es = {
       'Uso Neovim como mi editor de código.',
       'Capaz de hacer tareas DevOps.',
       'Conocimiento básico de Docker.',
-      'Cero experiencia con desarrollo backend.',
       'Actualmente aprendiendo Golang y sobre bundlers con Vite.',
       'Cómodo usando programas de diseño como Figma y Photoshop.',
       'Experiencia con retoque fotográfico.',

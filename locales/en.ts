@@ -65,7 +65,6 @@ export const en = {
       'I use Neovim as my code editor. (dotfiles)',
       'Capable of doing DevOps tasks.',
       'Basic knowledge of Docker.',
-      'Zero experience with backend development.',
       'Currently learning Golang and about bundlers with Vite.',
       'Comfortable using design software such as Figma and Photoshop.',
       'Experience with photo retouching.',
