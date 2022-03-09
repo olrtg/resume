@@ -3,6 +3,7 @@ export const en = {
     toggle_dark: 'Dark',
     toggle_light: 'Light',
     pdf: 'PDF Version',
+    go_to_home: 'Go to home',
   },
   basic: {
     position: 'Frontend Developer',
@@ -29,10 +30,8 @@ export const en = {
         title: 'Girolabs S.A — Technical Coordinator',
         duration: 'Sep 2019 — Feb 2020',
         tasks: [
-          // eslint-disable-next-line quotes
-          "Helped to solve issues with implementations that didn't allow the team to make progress.",
-          // eslint-disable-next-line quotes
-          "Research and implement new technologies, methodologies or tools into the team's workflow.",
+          'Helped to solve issues with implementations that didn\'t allow the team to make progress.',
+          'Research and implement new technologies, methodologies or tools into the team\'s workflow.',
           'Train and advise new teammates.',
         ],
       },
@@ -81,5 +80,9 @@ export const en = {
   languages: {
     title: 'Languages',
     content: 'Spanish (Native speaker), English (B2 Upper Intermediate).',
+  },
+  not_found: {
+    title: 'Not found',
+    description: 'We couldn\'t find any routes that matches',
   },
 }

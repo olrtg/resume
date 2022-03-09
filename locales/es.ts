@@ -3,6 +3,7 @@ export const es = {
     toggle_dark: 'Oscuro',
     toggle_light: 'Claro',
     pdf: 'Versión PDF',
+    go_to_home: 'Ir al inicio',
   },
   basic: {
     position: 'Desarrollador Frontend',
@@ -29,9 +30,7 @@ export const es = {
         title: 'Girolabs S.A — Coordinador Técnico',
         duration: 'Sep 2019 — Feb 2020',
         tasks: [
-          // eslint-disable-next-line quotes
           'Ayudar a resolver problemas con implementaciones que no permitían que el equipo progresara.',
-          // eslint-disable-next-line quotes
           'Investigar e implementar nuevas tecnologías, metodologías o herramientas en el flujo de trabajo del equipo.',
           'Capacitar y asesorar a nuevos compañeros.',
         ],
@@ -81,5 +80,9 @@ export const es = {
   languages: {
     title: 'Lenguas',
     content: 'Español (Nativo), Inglés (B2 Intermedio Superior)',
+  },
+  not_found: {
+    title: 'No encontrado',
+    description: 'No pudimos encontrar ninguna ruta para',
   },
 }

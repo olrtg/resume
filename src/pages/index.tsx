@@ -13,7 +13,7 @@ function Index() {
     <>
       <Header />
 
-      <main className="flex lg:flex-row flex-col max-w-6xl mx-auto">
+      <main className="flex flex-col mx-auto max-w-6xl lg:flex-row">
         <div className="w-full lg:w-1/4">
           <Container>
             <Sidebar />
@@ -71,7 +71,7 @@ function Index() {
                 }).map((text, index) => (
                   <p key={index}>{text}</p>
                 ))}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
                   <div>
                     <h3 className="font-semibold">Venus</h3>
                     <p className="!mb-2">

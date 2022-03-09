@@ -30,7 +30,7 @@ ul {
 }
 
 ul li:before {
-  content: "◆";
+  content: '◆';
   @apply text-green-800 text-sm pr-2;
 }
 
@@ -40,6 +40,10 @@ ul li {
 
 small {
   @apply text-sm;
+}
+
+code {
+  @apply p-1 text-sm text-green-800 bg-green-50 rounded;
 }
 
 /* Dark mode */
@@ -57,6 +61,11 @@ html.dark button:hover {
   @apply text-green-400 border-green-400;
 }
 
-html.dark ul li:before {
+html.dark ul li:before,
+html.dark code {
   @apply text-green-400;
+}
+
+html.dark code {
+  @apply bg-green-900;
 }
