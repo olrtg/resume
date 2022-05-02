@@ -19,6 +19,14 @@ export const es = {
     title: 'Experiencia laboral',
     positions: [
       {
+        title: 'Desarrollador Frontend Senior',
+        duration: 'Mar 2022 — Present',
+        tasks: [
+          'Mantener principalmente una App Web y una App Móvil.',
+          'Mejorar la experiencia del desarrollador.',
+        ],
+      },
+      {
         title: 'Independiente',
         duration: 'Feb 2020 — Actualidad',
         tasks: [
