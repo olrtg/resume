@@ -19,8 +19,16 @@ export const en = {
     title: 'Work Experience',
     positions: [
       {
+        title: 'Senior Frontend Developer',
+        duration: 'Mar 2022 — Present',
+        tasks: [
+          'Maintain primarily a Web App and a Mobile App.',
+          'Improve the developer experience.',
+        ],
+      },
+      {
         title: 'Freelance',
-        duration: 'Feb 2020 — Present',
+        duration: 'Feb 2020 — Mar 2022',
         tasks: [
           'Worked on a lot of projects with Wordpress and its ecosystem.',
           'Develop a Mobile App for one of the largest social clubs in my country.',
@@ -61,7 +69,7 @@ export const en = {
       'Used before other Javascript frameworks such as Nuxt, Next.js and Gatsby.',
       'Web scrapping with Puppeteer.',
       'Comfortable with the terminal and Linux.',
-      'I use Neovim as my code editor. (dotfiles)',
+      'I use Neovim as my code editor.',
       'Capable of doing DevOps tasks.',
       'Basic knowledge of Docker.',
       'Currently learning Golang and about bundlers with Vite.',
