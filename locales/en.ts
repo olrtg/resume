@@ -65,14 +65,15 @@ export const en = {
     title: 'Skills & Stack',
     content: [
       'Expert with Typescript, Angular and Ionic. Also with Wordpress.',
+      'Currently deep diving into React and React Native',
       'For styling I like to use Tailwind CSS, but I can switch to any CSS library or even plain CSS.',
       'Used before other Javascript frameworks such as Nuxt, Next.js and Gatsby.',
       'Web scrapping with Puppeteer.',
       'Comfortable with the terminal and Linux.',
       'I use Neovim as my code editor.',
       'Capable of doing DevOps tasks.',
-      'Basic knowledge of Docker.',
-      'Currently learning Golang and about bundlers with Vite.',
+      'Proeficient with Docker.',
+      'Learning about bundlers with Vite.',
       'Comfortable using design software such as Figma and Photoshop.',
       'Experience with photo retouching.',
       'I use Notion to organize myself.',
@@ -81,7 +82,7 @@ export const en = {
   open_source: {
     title: 'Open Source',
     description: [
-      'I have got interested in the tooling that surround us developers so, I started contributing to open source projects this year in a more consistent basis.',
+      'I\'ve got interested in the tooling that surround us developers so, I started contributing to open source projects this year in a more consistent basis.',
       'My own projects:',
     ],
   },

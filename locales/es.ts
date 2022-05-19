@@ -28,7 +28,7 @@ export const es = {
       },
       {
         title: 'Independiente',
-        duration: 'Feb 2020 — Actualidad',
+        duration: 'Feb 2020 — Mar 2022',
         tasks: [
           'Trabajé con muchos proyectos en Wordpress y su ecosistema.',
           'Desarrollé una App Móvil para uno de los clubes sociales más grandes de mi país.',
@@ -65,14 +65,15 @@ export const es = {
     title: 'Habilidades y herramientas',
     content: [
       'Experto con Typescript, Angular e Ionic. También con Wordpress.',
+      'Actualmente investigando las profundidades de React y React Native',
       'Para estilizar me gusta usar Tailwind CSS, pero puedo cambiarme a cualquier librería CSS e incluso CSS plano.',
       'Hice uso de otros frameworks Javascript como Nuxt, Next.js y Gatsby.',
       'Web scrapping con Puppeteer.',
-      'Cómodo con la terminal y entornos Linux.',
+      'Cómodo con la terminal y Linux.',
       'Uso Neovim como mi editor de código.',
       'Capaz de hacer tareas DevOps.',
-      'Conocimiento básico de Docker.',
-      'Actualmente aprendiendo Golang y sobre bundlers con Vite.',
+      'Proeficiente con Docker.',
+      'Aprendiendo sobre bundlers con Vite.',
       'Cómodo usando programas de diseño como Figma y Photoshop.',
       'Experiencia con retoque fotográfico.',
       'Uso Notion para organizarme.',
