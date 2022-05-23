@@ -11,7 +11,7 @@ export const es = {
   about_me: {
     title: 'Acerca de mí',
     content: [
-      'Hola! Mi nombre es José Olórtegui, un desarrollador frontend autodidacta y freelance viviendo en Paraguay. Me especializo en tecnologías web frontend y me gusta cuidar de la experiencia, arquitectura y la calidad del código de las cosas que desarrollo. Soy un fuerte creyente de la artesanía.',
+      'Hola! Mi nombre es José Olórtegui, un desarrollador frontend autodidacta viviendo en Paraguay. Me especializo en tecnologías web frontend y me gusta cuidar de la experiencia, arquitectura y la calidad del código de las cosas que desarrollo. Soy un fuerte creyente de la artesanía.',
       'En mi tiempo libre, la mayoría de las veces, me encontrarás jugando algún videojuego o codeando algo.',
     ],
   },
@@ -19,7 +19,8 @@ export const es = {
     title: 'Experiencia laboral',
     positions: [
       {
-        title: 'Desarrollador Frontend Senior',
+        title:
+          'Fundación Paraguaya (Poverty Stoplight) — Desarrollador Frontend Senior',
         duration: 'Mar 2022 — Present',
         tasks: [
           'Mantener principalmente una App Web y una App Móvil.',

@@ -11,7 +11,7 @@ export const en = {
   about_me: {
     title: 'About me',
     content: [
-      'Hello! My name is José Olórtegui, a self-taught developer and a freelance frontend developer living in Paraguay. I specialize in frontend web technologies and i like to take care of the experience, architecture and code quality of the things I build. I am a heavy believer in craftmanship.',
+      'Hello! My name is José Olórtegui, a self-taught frontend developer living in Paraguay. I specialize in frontend web technologies and i like to take care of the experience, architecture and code quality of the things I build. I am a heavy believer in craftmanship.',
       'In my spare time, most of the times, you will find me playing games or coding something.',
     ],
   },
