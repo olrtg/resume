@@ -1,5 +1,5 @@
 export enum Platforms {
-  LinkedIn = 'https://linkedin.com/in/jolortegui',
+  LinkedIn = 'https://www.linkedin.com/in/olrtg',
   GitHub = 'https://github.com/olrtg',
   Twitter = 'https://twitter.com/olrtg_',
 }
