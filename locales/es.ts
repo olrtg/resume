@@ -68,7 +68,7 @@ export const es = {
       'Experto con Typescript, Angular e Ionic. También con Wordpress.',
       'Actualmente investigando las profundidades de React y React Native',
       'Para estilizar me gusta usar Tailwind CSS, pero puedo cambiarme a cualquier librería CSS e incluso CSS plano.',
-      'Hice uso de otros frameworks Javascript como Nuxt, Next.js y Gatsby.',
+      'Hice uso de otros metaframeworks como Nuxt, Next.js y Gatsby.',
       'Web scrapping con Puppeteer.',
       'Cómodo con la terminal y Linux.',
       'Uso Neovim como mi editor de código.',

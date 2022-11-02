@@ -67,7 +67,7 @@ export const en = {
       'Expert with Typescript, Angular and Ionic. Also with Wordpress.',
       'Currently deep diving into React and React Native',
       'For styling I like to use Tailwind CSS, but I can switch to any CSS library or even plain CSS.',
-      'Used before other Javascript frameworks such as Nuxt, Next.js and Gatsby.',
+      'Used before other metaframeworks such as Nuxt, Next.js and Gatsby.',
       'Web scrapping with Puppeteer.',
       'Comfortable with the terminal and Linux.',
       'I use Neovim as my code editor.',
