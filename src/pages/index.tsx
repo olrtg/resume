@@ -73,6 +73,19 @@ function Index() {
                 ))}
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
                   <div>
+                    <h3 className="font-semibold">nvim-rename-state</h3>
+                    <p className="!mb-2">
+                      Rename the getter and the setter of a state hook in
+                      react/solidjs at the same time.
+                    </p>
+                    <div className="flex space-x-4 text-lg">
+                      <a href="https://github.com/olrtg/nvim-rename-state">
+                        <IconIonLogoGithub />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div>
                     <h3 className="font-semibold">macd</h3>
                     <p className="!mb-2">macOS defaults for humans.</p>
                     <div className="flex space-x-4 text-lg">
