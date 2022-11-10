@@ -7,13 +7,14 @@ import Title from '~/components/Title'
 
 import type { Position } from '~/types/position'
 
-function Index() {
-  const [t] = useTranslation()
+export default function Index() {
+  const { t } = useTranslation()
+
   return (
     <>
       <Header />
 
-      <main className="flex flex-col mx-auto max-w-6xl lg:flex-row">
+      <main className="flex flex-col max-w-6xl mx-auto lg:flex-row">
         <div className="w-full lg:w-1/4">
           <Container>
             <Sidebar />
@@ -158,5 +159,3 @@ function Index() {
     </>
   )
 }
-
-export default Index
