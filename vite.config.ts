@@ -8,14 +8,13 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
-export default defineConfig(async () => {
+export default defineConfig(async() => {
   const mdx = await import('@mdx-js/rollup')
 
   return {
     resolve: {
       alias: {
         '~/': `${path.resolve(__dirname, 'src')}/`,
-        'react/jsx-runtime': 'react/jsx-runtime.js',
       },
     },
     plugins: [
