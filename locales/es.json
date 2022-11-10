@@ -11,8 +11,8 @@
   "about_me": {
     "title": "Acerca de mí",
     "content": [
-      "Hola! Mi nombre es José Olórtegui, un desarrollador frontend autodidacta viviendo en Paraguay. Me especializo en tecnologías web frontend y me gusta cuidar de la experiencia, arquitectura y la calidad del código de las cosas que desarrollo. Soy un fuerte creyente de la artesanía.",
-      "En mi tiempo libre, la mayoría de las veces, me encontrarás jugando algún videojuego o codeando algo."
+      "¡Hola! Mi nombre es José Olórtegui, un desarrollador frontend autodidacta de {{age}} años que vive en Paraguay. Con un poco más de {{yearsOfExperience}} años de experiencia, me especializo en tecnologías web frontend y me gusta cuidar la experiencia del usuario y aportar calidad a las cosas que construyo.",
+      "En mi tiempo libre, la mayoría de las veces, me encontrarás jugando o creando algo que probablemente necesite para mejorar mi flujo de trabajo diario."
     ]
   },
   "work_experience": {

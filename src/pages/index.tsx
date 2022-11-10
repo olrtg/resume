@@ -7,6 +7,18 @@ import Title from '~/components/Title'
 
 import type { Position } from '~/types/position'
 
+function calculateAge(birthday: Date): number {
+  const ageDifMs = Date.now() - birthday.getTime()
+  const ageDate = new Date(ageDifMs)
+  return Math.abs(ageDate.getUTCFullYear() - 1970)
+}
+
+function calculateYearsOfExperience(start: Date): number {
+  const ageDifMs = Date.now() - start.getTime()
+  const ageDate = new Date(ageDifMs)
+  return Math.abs(ageDate.getUTCFullYear() - 1970)
+}
+
 export default function Index() {
   const { t } = useTranslation()
 
@@ -27,6 +39,10 @@ export default function Index() {
               <section>
                 <Title>{t('about_me.title')}</Title>
                 {t<string, string[]>('about_me.content', {
+                  age: calculateAge(new Date('1998-01-23')),
+                  yearsOfExperience: calculateYearsOfExperience(
+                    new Date('2016-09-14'),
+                  ),
                   returnObjects: true,
                 }).map((text, index) => (
                   <p key={index}>{text}</p>

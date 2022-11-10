@@ -11,8 +11,8 @@
   "about_me": {
     "title": "About me",
     "content": [
-      "Hello! My name is José Olórtegui, a self-taught frontend developer living in Paraguay. I specialize in frontend web technologies and i like to take care of the experience, architecture and code quality of the things I build. I am a heavy believer in craftmanship.",
-      "In my spare time, most of the times, you will find me playing games or coding something."
+      "Hello! My name is José Olórtegui, a {{age}} y/o self-taught frontend developer living in Paraguay. With a little over {{yearsOfExperience}} years of experience I specialize myself in frontend web technologies and I like to take care of the user experience and bring to the table quality in the things I build.",
+      "In my spare time, most of the times, you will find me playing games or build something that I probably need to improve my everyday workflow."
     ]
   },
   "work_experience": {
