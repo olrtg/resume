@@ -22,8 +22,10 @@
         "title": "Senior Frontend Developer",
         "duration": "Mar 2022 — Present",
         "tasks": [
-          "Maintain primarily a Web App and a Mobile App.",
-          "Improve the developer experience."
+          "Maintain primarily a Web App and a Mobile App. Worked a lot with React, React Native and Material UI.",
+          "Built an API that outputs well designed and localized email templates. Built with Next.js, MJML and MDX.",
+          "Kickstart the migration to Typescript and React Query.",
+          "Dockerize a huge Spring Boot/PostgreSQL application for better frontend ergonomics."
         ]
       },
       {
@@ -31,14 +33,15 @@
         "duration": "Feb 2020 — Mar 2022",
         "tasks": [
           "Worked on a lot of projects with Wordpress and its ecosystem.",
-          "Develop a Mobile App for one of the largest social clubs in my country."
+          "Develop a Mobile App for one of the largest social clubs in my country. Built with Angular and Ionic.",
+          "Learned a lot about RxJS and reactive programming."
         ]
       },
       {
         "title": "Girolabs S.A — Technical Coordinator",
         "duration": "Sep 2019 — Feb 2020",
         "tasks": [
-          "Helped to solve issues with implementations that didn't allow the team to make progress.",
+          "Help to solve issues with implementations that didn't allow the team to make progress.",
           "Research and implement new technologies, methodologies or tools into the team's workflow.",
           "Train and advise new teammates."
         ]
@@ -56,7 +59,8 @@
         "duration": "Sep 2016 — Jul 2019",
         "tasks": [
           "Developed a lot of custom themes for Wordpress from scratch.",
-          "I was in charge of producing mostly all of the development work for our clients."
+          "I was in charge of producing mostly all of the development work for our clients.",
+          "Also in charge of the UI/UX design for all of the projects."
         ]
       }
     ]
@@ -65,18 +69,18 @@
     "title": "Skills & Stack",
     "content": [
       "Expert with Typescript, Angular and Ionic. Also with Wordpress.",
-      "Currently deep diving into React and React Native",
+      "Currently deep diving into React and React Native.",
       "For styling I like to use Tailwind CSS, but I can switch to any CSS library or even plain CSS.",
-      "Used before other metaframeworks such as Nuxt, Next.js and Gatsby.",
-      "Web scrapping with Puppeteer.",
+      "Used before other metaframeworks such as Next.js and Astro.",
+      "Web scrapping with Puppeteer. Would love to try Playwright in a real project.",
       "Comfortable with the terminal and Linux.",
-      "I use Neovim as my code editor.",
+      "Had to learn the lua programming language since I use Neovim as my code editor.",
       "Capable of doing DevOps tasks.",
       "Proeficient with Docker.",
-      "Learning about bundlers with Vite.",
+      "Learning a lot about bundlers with Vite.",
       "Comfortable using design software such as Figma and Photoshop.",
       "Experience with photo retouching.",
-      "I use Notion to organize myself."
+      "I use Notion and Todoist to organize myself."
     ]
   },
   "open_source": {

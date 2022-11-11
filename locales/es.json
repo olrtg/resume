@@ -22,16 +22,19 @@
         "title": "Fundación Paraguaya (Poverty Stoplight) — Desarrollador Frontend Senior",
         "duration": "Mar 2022 — Present",
         "tasks": [
-          "Mantener principalmente una App Web y una App Móvil.",
-          "Mejorar la experiencia del desarrollador."
+          "Mantener principalmente una aplicación web y una aplicación móvil. Trabajé mucho con React, React Native y Material UI.",
+          "Desarrollé una API que genera plantillas de correo electrónico bien diseñadas y con traducciones a otros lenguages. Hecho con Next.js, MJML y MDX.",
+          "Promover e iniciar la migración a TypeScript y React Query.",
+          "Dockerizé una aplicación enorme en Spring Boot/PostgreSQL para mejorar la ergonomía de la interfaz."
         ]
       },
       {
         "title": "Independiente",
         "duration": "Feb 2020 — Mar 2022",
         "tasks": [
-          "Trabajé con muchos proyectos en Wordpress y su ecosistema.",
-          "Desarrollé una App Móvil para uno de los clubes sociales más grandes de mi país."
+          "Trabajé en muchos proyectos con Wordpress y su ecosistema.",
+          "Desarrollar una aplicación móvil para uno de los clubes sociales más grandes de mi país. Hecho con Angular e Ionic.",
+          "Aprendí mucho sobre RxJS y programación reactiva."
         ]
       },
       {
@@ -56,7 +59,8 @@
         "duration": "Sep 2016 — Jul 2019",
         "tasks": [
           "Desarrollé muchos temas personalizados para Wordpress desde cero.",
-          "Estaba a cargo de producir casi todo el trabajo de desarrollo para nuestros clientes."
+          "Estuve a cargo de producir casi todo el trabajo de desarrollo para nuestros clientes.",
+          "También a cargo del diseño de UI/UX para todos los proyectos."
         ]
       }
     ]
@@ -65,18 +69,18 @@
     "title": "Habilidades y herramientas",
     "content": [
       "Experto con Typescript, Angular e Ionic. También con Wordpress.",
-      "Actualmente investigando las profundidades de React y React Native",
-      "Para estilizar me gusta usar Tailwind CSS, pero puedo cambiarme a cualquier librería CSS e incluso CSS plano.",
-      "Hice uso de otros metaframeworks como Nuxt, Next.js y Gatsby.",
-      "Web scrapping con Puppeteer.",
+      "Actualmente profundizando en React y React Native.",
+      "Para diseñar, me gusta usar Tailwind CSS, pero puedo cambiar a cualquier librería de CSS o incluso a CSS plano.",
+      "Usado antes que otros metaframeworks como Next.js y Astro.",
+      "Web scrapping con Puppeteer. Me encantaría probar a Playwright en un proyecto real.",
       "Cómodo con la terminal y Linux.",
-      "Uso Neovim como mi editor de código.",
-      "Capaz de hacer tareas DevOps.",
-      "Proeficiente con Docker.",
-      "Aprendiendo sobre bundlers con Vite.",
-      "Cómodo usando programas de diseño como Figma y Photoshop.",
-      "Experiencia con retoque fotográfico.",
-      "Uso Notion para organizarme."
+      "Tuve que aprender el lenguaje de programación lua ya que uso Neovim como mi editor de código.",
+      "Capaz de realizar tareas de DevOps.",
+      "Competente con Docker.",
+      "Aprendiendo mucho sobre empaquetadores con Vite.",
+      "Cómodo usando software de diseño como Figma y Photoshop.",
+      "Experiencia con el retoque fotográfico.",
+      "Utilizo Notion y Todoist para organizarme."
     ]
   },
   "open_source": {
