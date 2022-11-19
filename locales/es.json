@@ -35,7 +35,8 @@
         "tasks": [
           "Trabajé en muchos proyectos con Wordpress y su ecosistema.",
           "Desarrollar una aplicación móvil para uno de los clubes sociales más grandes de mi país. Hecho con Angular e Ionic.",
-          "Aprendí mucho sobre RxJS y programación reactiva."
+          "Aprendí mucho sobre RxJS y programación reactiva.",
+          "Experimenté con Docker para levantar instancias de Wordpress de forma más rápida para nuevos proyectos."
         ]
       },
       {
@@ -71,14 +72,14 @@
     "content": [
       "Experto con Typescript, Angular e Ionic. También con Wordpress.",
       "Actualmente profundizando en React y React Native.",
-      "Para diseñar, me gusta usar Tailwind CSS, pero puedo cambiar a cualquier librería de CSS o incluso a CSS plano.",
-      "Usado antes que otros metaframeworks como Next.js y Astro.",
+      "Para diseñar, me gusta usar Tailwind CSS, pero puedo usar cualquier librería de CSS o incluso a CSS plano.",
+      "Usé otros metaframeworks como Next.js y Astro.",
       "Web scrapping con Puppeteer. Me encantaría probar a Playwright en un proyecto real.",
       "Cómodo con la terminal y Linux.",
-      "Tuve que aprender el lenguaje de programación lua ya que uso Neovim como mi editor de código.",
+      "Tuve que aprender el lenguaje de programación Lua ya que uso Neovim como mi editor de código.",
       "Capaz de realizar tareas de DevOps.",
       "Competente con Docker.",
-      "Aprendiendo mucho sobre empaquetadores con Vite.",
+      "Aprendiendo mucho sobre bundlers con Vite.",
       "Cómodo usando software de diseño como Figma y Photoshop.",
       "Experiencia con el retoque fotográfico.",
       "Utilizo Notion y Todoist para organizarme."
@@ -87,7 +88,7 @@
   "open_source": {
     "title": "Código Abierto",
     "description": [
-      "Me interesé en las herramientas que nos rodean a los desarrolladores, así que comencé a contribuir en proyectos de código abierto este año de forma más consistente.",
+      "Me interesé en las herramientas que nos rodean a los desarrolladores, así que comencé a trabajar en proyectos de código abierto este año de forma más consistente.",
       "Mis propios proyectos:"
     ]
   },

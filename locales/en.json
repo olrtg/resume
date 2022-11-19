@@ -26,7 +26,7 @@
           "Built an API that outputs well designed and localized email templates. Built with Next.js, MJML and MDX.",
           "Kickstart the migration to Typescript and React Query.",
           "Dockerize a huge Spring Boot/PostgreSQL application for better frontend ergonomics.",
-          "Migrated the whole Web App frontend from Create React App to Vite."
+          "Migrated the whole Web App frontend project from Create React App to Vite."
         ]
       },
       {
@@ -35,7 +35,8 @@
         "tasks": [
           "Worked on a lot of projects with Wordpress and its ecosystem.",
           "Develop a Mobile App for one of the largest social clubs in my country. Built with Angular and Ionic.",
-          "Learned a lot about RxJS and reactive programming."
+          "Learned a lot about RxJS and reactive programming.",
+          "Experimented with Docker to kickstart Wordpress instances faster for new projects."
         ]
       },
       {
@@ -75,7 +76,7 @@
       "Used before other metaframeworks such as Next.js and Astro.",
       "Web scrapping with Puppeteer. Would love to try Playwright in a real project.",
       "Comfortable with the terminal and Linux.",
-      "Had to learn the lua programming language since I use Neovim as my code editor.",
+      "Had to learn the Lua programming language since I use Neovim as my code editor.",
       "Capable of doing DevOps tasks.",
       "Proeficient with Docker.",
       "Learning a lot about bundlers with Vite.",
