@@ -25,7 +25,8 @@
           "Maintain primarily a Web App and a Mobile App. Worked a lot with React, React Native and Material UI.",
           "Built an API that outputs well designed and localized email templates. Built with Next.js, MJML and MDX.",
           "Kickstart the migration to Typescript and React Query.",
-          "Dockerize a huge Spring Boot/PostgreSQL application for better frontend ergonomics."
+          "Dockerize a huge Spring Boot/PostgreSQL application for better frontend ergonomics.",
+          "Migrated the whole Web App frontend from Create React App to Vite."
         ]
       },
       {

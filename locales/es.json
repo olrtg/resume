@@ -25,7 +25,8 @@
           "Mantener principalmente una aplicación web y una aplicación móvil. Trabajé mucho con React, React Native y Material UI.",
           "Desarrollé una API que genera plantillas de correo electrónico bien diseñadas y con traducciones a otros lenguages. Hecho con Next.js, MJML y MDX.",
           "Promover e iniciar la migración a TypeScript y React Query.",
-          "Dockerizé una aplicación enorme en Spring Boot/PostgreSQL para mejorar la ergonomía de la interfaz."
+          "Dockerizé una aplicación enorme en Spring Boot/PostgreSQL para mejorar la ergonomía de la interfaz.",
+          "Migré toda el frontend de la aplicación web de Create React App a Vite."
         ]
       },
       {
