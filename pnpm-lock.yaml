@@ -15,7 +15,7 @@ specifiers:
   '@vitejs/plugin-react': 2.2.0
   autoprefixer: 10.4.13
   eslint: 8.27.0
-  i18next: 22.0.4
+  i18next: 22.0.6
   i18next-browser-languagedetector: 7.0.1
   postcss: 8.4.19
   react: 18.2.0
@@ -33,11 +33,11 @@ specifiers:
   vite-plugin-pwa: 0.13.3
 
 dependencies:
-  i18next: 22.0.4
+  i18next: 22.0.6
   i18next-browser-languagedetector: 7.0.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-i18next: 12.0.0_n3kmhq4527torfjiti537juzwy
+  react-i18next: 12.0.0_nger6pvrp5hnzeykouhwqmsdti
   react-router: 6.4.3_react@18.2.0
   react-router-config: 5.1.1_n6chwcsdq6puvu4oljeyhosdga
   react-router-dom: 6.4.3_biqbaboplfbrettd7655fr4n2y
@@ -3930,8 +3930,8 @@ packages:
       '@babel/runtime': 7.20.1
     dev: false
 
-  /i18next/22.0.4:
-    resolution: {integrity: sha512-TOp7BTMKDbUkOHMzDlVsCYWpyaFkKakrrO3HNXfSz4EeJaWwnBScRmgQSTaWHScXVHBUFXTvShrCW8uryBYFcg==}
+  /i18next/22.0.6:
+    resolution: {integrity: sha512-RlreNGoPIdDP4QG+qSA9PxZKGwlzmcozbI9ObI6+OyUa/Rp0EjZZA9ubyBjw887zVNZsC+7FI3sXX8oiTzAfig==}
     dependencies:
       '@babel/runtime': 7.20.1
     dev: false
@@ -5309,7 +5309,7 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-i18next/12.0.0_n3kmhq4527torfjiti537juzwy:
+  /react-i18next/12.0.0_nger6pvrp5hnzeykouhwqmsdti:
     resolution: {integrity: sha512-/O7N6aIEAl1FaWZBNvhdIo9itvF/MO/nRKr9pYqRc9LhuC1u21SlfwpiYQqvaeNSEW3g3qUXLREOWMt+gxrWbg==}
     peerDependencies:
       i18next: '>= 19.0.0'
@@ -5324,7 +5324,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.17.0
       html-parse-stringify: 3.0.1
-      i18next: 22.0.4
+      i18next: 22.0.6
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
