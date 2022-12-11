@@ -1,81 +1,201 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import { Icon } from "astro-icon";
+
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Container from "../components/Container.astro";
+import Title from "../components/Title.astro";
+import Sidebar from "../components/Sidebar.astro";
+
+function yearsSince(start: Date) {
+  const ageDifMs = Date.now() - start.getTime();
+  const ageDate = new Date(ageDifMs);
+
+  return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+<Layout title="José Olórtegui">
+  <Header />
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+  <main class="flex flex-col max-w-6xl mx-auto lg:flex-row">
+    <div class="w-full lg:w-1/4">
+      <Container>
+        <Sidebar />
+      </Container>
+    </div>
+
+    <div class="w-full lg:w-3/4">
+      <Container>
+        <div class="space-y-8">
+          <section>
+            <Title>About me</Title>
+            <p>
+              Hello! My name is José Olórtegui, a {
+                yearsSince(new Date("1998-01-23"))
+              } y/o self-taught frontend developer living in Paraguay. With a little
+              over {yearsSince(new Date("2016-09-14"))} years of experience I specialize
+              myself in frontend web technologies and I like to take care of the
+              user experience and bring to the table quality in the things I build.
+            </p>
+            <p>
+              In my spare time, most of the times, you will find me playing
+              games or build something that I probably need to improve my
+              everyday workflow.
+            </p>
+          </section>
+
+          <section>
+            <Title>Work Experience</Title>
+            <div class="space-y-6">
+              <div>
+                <h3 class="font-semibold">
+                  Fundación Paraguaya (Poverty Stoplight) — Senior Frontend
+                  Developer
+                </h3>
+                <p>
+                  <small>Mar 2022 — Present</small>
+                </p>
+                <ul>
+                  <li>
+                    Maintain primarily a Web App and a Mobile App. Worked a lot
+                    with React, React Native and Material UI.
+                  </li>
+                  <li>
+                    Built an API that outputs well designed and localized email
+                    templates. Built with Next.js, MJML and MDX.
+                  </li>
+                  <li>
+                    Kickstart the migration to Typescript and React Query.
+                  </li>
+                  <li>
+                    Dockerize a huge Spring Boot/PostgreSQL application for
+                    better frontend ergonomics.
+                  </li>
+                  <li>
+                    Migrated the whole Web App frontend project from Create
+                    React App to Vite.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <Title>Skills & Stack</Title>
+            <ul>
+              <li>
+                Expert with Typescript, Angular and Ionic. Also with Wordpress.
+              </li>
+              <li>Currently deep diving into React and React Native.</li>
+              <li>
+                For styling I like to use Tailwind CSS, but I can switch to any
+                CSS library or even plain CSS.
+              </li>
+              <li>
+                Used before other metaframeworks such as Next.js and Astro.
+              </li>
+              <li>Web scrapping with Puppeteer.</li>
+              <li>Would love to try Playwright in a real project.</li>
+              <li>Comfortable with the terminal and Linux.</li>
+              <li>
+                Had to learn the Lua programming language since I use Neovim as
+                my code editor.
+              </li>
+              <li>Capable of doing DevOps tasks.</li>
+              <li>Proeficient with Docker.</li>
+              <li>Learning a lot about bundlers with Vite.</li>
+              <li>
+                Comfortable using design software such as Figma and Photoshop.
+              </li>
+              <li>Experience with photo retouching.</li>
+              <li>I use Notion and Todoist to organize myself.</li>
+            </ul>
+          </section>
+
+          <section>
+            <Title>Open Source</Title>
+            <p>
+              I've got interested in the tooling that surround us developers so,
+              I started contributing to open source projects this year in a more
+              consistent basis.
+            </p>
+            <p>My own projects:</p>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
+              <div>
+                <h3 class="font-semibold">nvim-rename-state</h3>
+                <p class="!mb-2">
+                  Rename the getter and the setter of a state hook in
+                  react/solidjs at the same time.
+                </p>
+                <div class="flex space-x-4 text-lg">
+                  <a href="https://github.com/olrtg/nvim-rename-state">
+                    <Icon pack="mdi" name="github" class="h-6" />
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="font-semibold">macd</h3>
+                <p class="!mb-2">macOS defaults for humans.</p>
+                <div class="flex space-x-4 text-lg">
+                  <a
+                    href="https://www.npmjs.com/package/@olrtg/macd"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><Icon pack="mdi" name="npm-variant-outline" class="h-6" />
+                  </a>
+                  <a href="https://github.com/olrtg/macd"
+                    ><Icon pack="mdi" name="github" class="h-6" />
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="font-semibold">Venus</h3>
+                <p class="!mb-2">
+                  Opinionated Vite starter template for modern React development
+                </p>
+                <div class="flex space-x-4 text-lg">
+                  <a href="https://github.com/olrtg/venus"
+                    ><Icon pack="mdi" name="github" class="h-6" />
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="font-semibold">bulma-fab-button</h3>
+                <p class="!mb-2">
+                  A Bulma&apos;s extension for FABs (Floating Action Buttons)
+                </p>
+                <div class="flex space-x-4 text-lg">
+                  <a
+                    href="https://www.npmjs.com/package/bulma-fab-button"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><Icon pack="mdi" name="npm-variant-outline" class="h-6" />
+                  </a>
+                  <a
+                    href="https://github.com/olrtg/bulma-fab-button"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><Icon pack="mdi" name="github" class="h-6" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <Title>Languages</Title>
+            <p>Spanish (Native speaker), English (Upper Intermediate).</p>
+          </section>
+        </div>
+
+        <footer class="mt-8 text-center print:hidden">
+          <button class="text-link">PDF Version</button>
+        </footer>
+      </Container>
+    </div>
+  </main>
+</Layout>
