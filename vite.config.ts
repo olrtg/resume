@@ -7,8 +7,9 @@ import { VitePWA } from 'vite-plugin-pwa'
 import AutoImport from 'unplugin-auto-import/vite'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
+import ViteRadar from 'vite-plugin-radar'
 
-export default defineConfig(async() => {
+export default defineConfig(async () => {
   const mdx = await import('@mdx-js/rollup')
 
   return {
@@ -61,6 +62,11 @@ export default defineConfig(async() => {
         ],
       }),
       Icons({ compiler: 'jsx', jsx: 'react', autoInstall: true }),
+      ViteRadar({
+        analytics: {
+          id: 'G-PCQWX7YGFE',
+        },
+      }),
     ],
   }
 })
