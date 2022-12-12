@@ -3,9 +3,10 @@ import { Icon } from "astro-icon";
 
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
-import Container from "../components/Container.astro";
 import Title from "../components/Title.astro";
+import Container from "../components/Container.astro";
 import Sidebar from "../components/Sidebar.astro";
+import PrintButton from '../components/PrintButton.astro'
 
 function yearsSince(start: Date) {
   const ageDifMs = Date.now() - start.getTime();
@@ -193,9 +194,10 @@ function yearsSince(start: Date) {
         </div>
 
         <footer class="mt-8 text-center print:hidden">
-          <button class="text-link">PDF Version</button>
+          <PrintButton />
         </footer>
       </Container>
     </div>
   </main>
 </Layout>
+
