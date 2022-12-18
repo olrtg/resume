@@ -1,14 +1,14 @@
 ---
 import { changeLanguage, t } from "i18next";
 import { Icon } from "astro-icon";
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Title from "../components/Title.astro";
-import Container from "../components/Container.astro";
-import Sidebar from "../components/Sidebar.astro";
-import PrintButton from "../components/PrintButton.astro";
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Title from "../../components/Title.astro";
+import Container from "../../components/Container.astro";
+import Sidebar from "../../components/Sidebar.astro";
+import PrintButton from "../../components/PrintButton.astro";
 
-changeLanguage("en");
+changeLanguage("es");
 
 function yearsSince(start: Date) {
     const ageDifMs = Date.now() - start.getTime();
