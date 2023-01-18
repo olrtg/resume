@@ -8,7 +8,7 @@ specifiers:
   '@tailwindcss/typography': 0.5.8
   '@types/mdx': 2.0.3
   '@types/node': 18.11.9
-  '@types/react': 18.0.25
+  '@types/react': 18.0.27
   '@types/react-dom': 18.0.8
   '@types/react-router-config': ^5.0.6
   '@types/tailwindcss': 3.1.0
@@ -51,7 +51,7 @@ devDependencies:
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
   '@types/mdx': 2.0.3
   '@types/node': 18.11.9
-  '@types/react': 18.0.25
+  '@types/react': 18.0.27
   '@types/react-dom': 18.0.8
   '@types/react-router-config': 5.0.6
   '@types/tailwindcss': 3.1.0_postcss@8.4.19
@@ -1876,14 +1876,14 @@ packages:
   /@types/react-dom/18.0.8:
     resolution: {integrity: sha512-C3GYO0HLaOkk9dDAz3Dl4sbe4AKUGTCfFIZsz3n/82dPNN8Du533HzKatDxeUYWu24wJgMP1xICqkWk1YOLOIw==}
     dependencies:
-      '@types/react': 18.0.25
+      '@types/react': 18.0.27
     dev: true
 
   /@types/react-router-config/5.0.6:
     resolution: {integrity: sha512-db1mx37a1EJDf1XeX8jJN7R3PZABmJQXR8r28yUjVMFSjkmnQo6X6pOEEmNl+Tp2gYQOGPdYbFIipBtdElZ3Yg==}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 18.0.25
+      '@types/react': 18.0.27
       '@types/react-router': 5.1.19
     dev: true
 
@@ -1891,11 +1891,11 @@ packages:
     resolution: {integrity: sha512-Fv/5kb2STAEMT3wHzdKQK2z8xKq38EDIGVrutYLmQVVLe+4orDFquU52hQrULnEHinMKv9FSA6lf9+uNT1ITtA==}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 18.0.25
+      '@types/react': 18.0.27
     dev: true
 
-  /@types/react/18.0.25:
-    resolution: {integrity: sha512-xD6c0KDT4m7n9uD4ZHi02lzskaiqcBxf4zi+tXZY98a04wvc0hi/TcCPC2FOESZi51Nd7tlUeOJY8RofL799/g==}
+  /@types/react/18.0.27:
+    resolution: {integrity: sha512-3vtRKHgVxu3Jp9t718R9BuzoD4NcQ8YJ5XRzsSKxNDiDonD2MXIT1TmSkenxuCycZJoQT5d2vE8LwWJxBC1gmA==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
