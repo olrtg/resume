@@ -18,7 +18,7 @@
     "react-router-dom": "6.4.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.29.4",
+    "@antfu/eslint-config": "0.35.2",
     "@iconify-json/ion": "1.1.4",
     "@mdx-js/rollup": "2.1.5",
     "@svgr/core": "6.5.1",
