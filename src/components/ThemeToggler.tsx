@@ -5,7 +5,7 @@ export default function ThemeToggler() {
     localStorage.getItem('theme') ?? 'light',
   )
 
-  const handleClick = () => {
+  function handleClick() {
     setTheme(theme() === 'light' ? 'dark' : 'light')
   }
 

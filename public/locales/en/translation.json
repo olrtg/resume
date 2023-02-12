@@ -6,7 +6,8 @@
     "toggle_dark": "Dark",
     "toggle_light": "Light",
     "pdf": "PDF Version",
-    "go_to_home": "Go to home"
+    "go_to_home": "Go to home",
+    "repo": "Go to repo"
   },
   "basic": {
     "position": "Frontend Developer"

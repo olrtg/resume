@@ -6,7 +6,8 @@
     "toggle_dark": "Oscuro",
     "toggle_light": "Claro",
     "pdf": "Versión PDF",
-    "go_to_home": "Ir al inicio"
+    "go_to_home": "Ir al inicio",
+    "repo": "Ir al repo"
   },
   "basic": {
     "position": "Desarrollador Frontend"
