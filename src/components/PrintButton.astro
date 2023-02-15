@@ -1,0 +1,13 @@
+---
+import { t } from "i18next";
+---
+
+<button id="print" class="text-link">{t("button.pdf")}</button>
+
+<script>
+  const ref = document.getElementById("print");
+
+  if (ref) {
+    ref.addEventListener("click", () => window.print());
+  }
+</script>

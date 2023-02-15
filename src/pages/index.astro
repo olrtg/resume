@@ -1,0 +1,170 @@
+---
+import { changeLanguage, t } from "i18next";
+import { Icon } from "astro-icon";
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Title from "../components/Title.astro";
+import Container from "../components/Container.astro";
+import Sidebar from "../components/Sidebar.astro";
+import PrintButton from "../components/PrintButton.astro";
+
+changeLanguage("en");
+
+function yearsSince(start: Date) {
+    const ageDifMs = Date.now() - start.getTime();
+    const ageDate = new Date(ageDifMs);
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
+---
+
+<Layout>
+  <Header />
+
+  <main class="flex flex-col max-w-6xl mx-auto lg:flex-row">
+    <div class="w-full lg:w-1/4">
+      <Container>
+        <Sidebar />
+      </Container>
+    </div>
+
+    <div class="w-full lg:w-3/4">
+      <Container>
+        <div class="space-y-8">
+          <section>
+            <Title>{t('about_me.title')}</Title>
+            {
+              t('about_me.content', {
+                age: yearsSince(new Date('1998-01-23')),
+                yearsOfExperience: yearsSince(new Date('2016-09-14')),
+                returnObjects: true,
+              }).map((text: unknown) => <p>{text}</p>)
+            }
+          </section>
+
+          <section>
+            <Title>{t('work_experience.title')}</Title>
+            <div class="space-y-6">
+              {
+                t('work_experience.positions', {
+                  returnObjects: true,
+                }).map(position => (
+                  <div>
+                    <h3 class="font-semibold">{position.title}</h3>
+                    <p>
+                      <small>{position.duration}</small>
+                    </p>
+                    <ul>
+                      {position.tasks.map(task => (
+                        <li>{task}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))
+              }
+            </div>
+          </section>
+
+          <section>
+            <Title>{t('skills_stack.title')}</Title>
+            <ul>
+              {
+                t('skills_stack.content', {
+                  returnObjects: true,
+                }).map(text => <li>{text}</li>)
+              }
+            </ul>
+          </section>
+
+          <section>
+            <Title>{t('open_source.title')}</Title>
+            {
+              t('open_source.description', {
+                returnObjects: true,
+              }).map(text => <p>{text}</p>)
+            }
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
+              <div>
+                <h3 class="font-semibold">nvim-rename-state</h3>
+                <p class="!mb-2">
+                  Rename the getter and the setter of a state hook in
+                  react/solidjs at the same time.
+                </p>
+                <div class="flex space-x-4 text-lg">
+                  <a href="https://github.com/olrtg/nvim-rename-state">
+                    <Icon pack="mdi" name="github" class="h-6" />
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="font-semibold">macd</h3>
+                <p class="!mb-2">macOS defaults for humans.</p>
+                <div class="flex space-x-4 text-lg">
+                  <a
+                    href="https://www.npmjs.com/package/@olrtg/macd"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><Icon pack="mdi" name="npm-variant-outline" class="h-6" />
+                  </a>
+                  <a href="https://github.com/olrtg/macd"
+                    ><Icon pack="mdi" name="github" class="h-6" />
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="font-semibold">Venus</h3>
+                <p class="!mb-2">
+                  Opinionated Vite starter template for modern React development
+                </p>
+                <div class="flex space-x-4 text-lg">
+                  <a href="https://github.com/olrtg/venus"
+                    ><Icon pack="mdi" name="github" class="h-6" />
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="font-semibold">bulma-fab-button</h3>
+                <p class="!mb-2">
+                  A Bulma&apos;s extension for FABs (Floating Action Buttons)
+                </p>
+                <div class="flex space-x-4 text-lg">
+                  <a
+                    href="https://www.npmjs.com/package/bulma-fab-button"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><Icon pack="mdi" name="npm-variant-outline" class="h-6" />
+                  </a>
+                  <a
+                    href="https://github.com/olrtg/bulma-fab-button"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><Icon pack="mdi" name="github" class="h-6" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <Title>{t('languages.title')}</Title>
+            <p>{t('languages.content')}</p>
+          </section>
+        </div>
+
+        <footer
+          class="mt-8 space-x-4 flex items-center justify-center print:hidden"
+        >
+          <PrintButton />
+
+          <a
+            href="https://github.com/olrtg/resume"
+            target="_blank"
+            class="text-link">{t('button.repo')}</a
+          >
+        </footer>
+      </Container>
+    </div>
+  </main>
+</Layout>

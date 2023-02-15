@@ -1,10 +1,4 @@
 {
-  "recommendations": [
-    "antfu.vite",
-    "antfu.iconify",
-    "dbaeumer.vscode-eslint",
-    "bradlc.vscode-tailwindcss",
-    "csstools.postcss",
-    "silvenon.mdx"
-  ]
+  "recommendations": ["astro-build.astro-vscode"],
+  "unwantedRecommendations": []
 }
