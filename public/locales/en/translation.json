@@ -16,7 +16,7 @@
     "title": "About me",
     "content": [
       "Hello! My name is José Olórtegui, a {{age}} y/o self-taught frontend developer living in Paraguay. With a little over {{yearsOfExperience}} years of experience I specialize myself in frontend web technologies and I like to take care of the user experience and bring to the table quality in the things I build.",
-      "In my spare time, most of the times, you will find me playing games or build something that I probably need to improve my everyday workflow."
+      "In my spare time, most of the times, you will find me playing games or build something that I probably need to improve my daily workflow."
     ]
   },
   "work_experience": {
@@ -92,7 +92,7 @@
   "open_source": {
     "title": "Open Source",
     "description": [
-      "I've got interested in the tooling that surround us developers so, I started contributing to open source projects this year in a more consistent basis.",
+      "I've got interested in the tooling that surround us developers so, I started contributing to open source projects since last year in a more consistent basis.",
       "My own projects:"
     ]
   },
