@@ -26,10 +26,10 @@
         "duration": "Mar 2022 — Presente",
         "tasks": [
           "Mantuve principalmente una aplicación web y una aplicación móvil. Trabajé mucho con React, React Native, MUI y algo de Redux.",
-          "Construí una API que genera plantillas de correo electrónico bien diseñadas con soporte para varios idiomas. Construida con Next.js, MJML y MDX.",
+          "Desarrollé una API que genera plantillas de correo electrónico bien diseñadas con soporte para múltiples idiomas. Construida con Next.js, MJML y MDX.",
           "Inicié la migración del proyecto de aplicación web (80K LOC) a Typecript (ahora migrado en un 43,6%) y TanStack Query. Lo que resultó en una enorme reducción de errores y mucha más confianza al refactorizar.",
           "Containericé una enorme aplicación Spring Boot/PostgreSQL con Docker. Dándole al equipo de frontend una mejor experiencia de desarrollo al integrar funciones con el backend.",
-          "Migré toda la aplicación web de Create React App (Webpack) a Vite. Reduciendo el tiempo de desarrollo de 1 minuto y 30 segundos a menos de 1,2 segundos, lo que nos ahorró innumerables horas a largo plazo."
+          "Migré toda la aplicación web de Create React App (Webpack) a Vite. Reduciendo el tiempo de desarrollo de 1 minuto y 30 segundos a menos de 1,2 segundos, lo que nos ahorró incontables horas a largo plazo."
         ]
       },
       {
