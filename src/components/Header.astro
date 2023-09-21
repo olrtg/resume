@@ -1,16 +1,16 @@
 ---
-import i18next from "i18next";
-import ThemeToggler from "./ThemeToggler";
+import i18next from 'i18next'
+import ThemeToggler from './ThemeToggler'
 
-const languages = Object.keys(i18next.services.resourceStore.data);
+const languages = Object.keys(i18next.services.resourceStore.data)
 const nextLanguage =
-  languages[(languages.indexOf(i18next.language) + 1) % languages.length];
+  languages[(languages.indexOf(i18next.language) + 1) % languages.length]
 ---
 
 <header class="flex justify-center items-center pt-4 space-x-4 print:hidden">
   <ThemeToggler client:load />
   <a
-    href={nextLanguage === "en" ? "/" : nextLanguage}
+    href={nextLanguage === 'en' ? '/' : nextLanguage}
     class="uppercase text-link">{nextLanguage}</a
   >
 </header>

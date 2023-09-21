@@ -15,8 +15,7 @@
   "about_me": {
     "title": "Acerca de mí",
     "content": [
-      "¡Hola! Mi nombre es José Olórtegui, un desarrollador frontend autodidacta de {{age}} años que vive en Paraguay. Con un poco más de {{yearsOfExperience}} años de experiencia, me especializo en tecnologías web frontend y me gusta cuidar la experiencia del usuario y aportar calidad a las cosas que construyo.",
-      "En mi tiempo libre, la mayoría de las veces, me encontrarás jugando o creando algo que probablemente necesite para mejorar mi flujo de trabajo diario."
+      "¡Hola! Mi nombre es José Olórtegui, un desarrollador frontend autodidacta de {{age}} años proveniente de Paraguay. Con un poco más de {{yearsOfExperience}} años de experiencia, he perfeccionado mis conocimientos en tecnologías web frontend, enfocándome en brindar experiencias de usuario excepcionales y garantizar la más alta calidad en todo lo que hago."
     ]
   },
   "work_experience": {
@@ -24,49 +23,49 @@
     "positions": [
       {
         "title": "Fundación Paraguaya (Poverty Stoplight) — Desarrollador Frontend Senior",
-        "duration": "Mar 2022 — Present",
+        "duration": "Mar 2022 — Presente",
         "tasks": [
-          "Mantener principalmente una aplicación web y una aplicación móvil. Trabajé mucho con React, React Native y Material UI.",
-          "Desarrollé una API que genera plantillas de correo electrónico bien diseñadas y con traducciones a otros lenguages. Hecho con Next.js, MJML y MDX.",
-          "Promover e iniciar la migración a TypeScript y React Query.",
-          "Dockerizé una aplicación enorme en Spring Boot/PostgreSQL para mejorar la ergonomía de la interfaz.",
-          "Migré toda el frontend de la aplicación web de Create React App a Vite."
+          "Mantuve principalmente una aplicación web y una aplicación móvil. Trabajé mucho con React, React Native, MUI y algo de Redux.",
+          "Construí una API que genera plantillas de correo electrónico bien diseñadas con soporte para varios idiomas. Construida con Next.js, MJML y MDX.",
+          "Inicié la migración del proyecto de aplicación web (80K LOC) a Typecript (ahora migrado en un 43,6%) y TanStack Query. Lo que resultó en una enorme reducción de errores y mucha más confianza al refactorizar.",
+          "Containericé una enorme aplicación Spring Boot/PostgreSQL con Docker. Dándole al equipo de frontend una mejor experiencia de desarrollo al integrar funciones con el backend.",
+          "Migré toda la aplicación web de Create React App (Webpack) a Vite. Reduciendo el tiempo de desarrollo de 1 minuto y 30 segundos a menos de 1,2 segundos, lo que nos ahorró innumerables horas a largo plazo."
         ]
       },
       {
         "title": "Independiente",
         "duration": "Feb 2020 — Mar 2022",
         "tasks": [
-          "Trabajé en muchos proyectos con Wordpress y su ecosistema.",
-          "Desarrollar una aplicación móvil para uno de los clubes sociales más grandes de mi país. Hecho con Angular e Ionic.",
-          "Aprendí mucho sobre RxJS y programación reactiva.",
-          "Experimenté con Docker para levantar instancias de Wordpress de forma más rápida para nuevos proyectos."
+          "Trabajé en muchos proyectos con WordPress y su ecosistema. Especialmente usando Elementor, WooCommerce y Crocoblock.",
+          "Desarrollé una aplicación móvil y una aplicación web (sitio de administración para la aplicación móvil) para uno de los clubes sociales más grandes de mi país. Construida con Angular e Ionic. También aprendí mucho sobre RxJS.",
+          "Trabajé con Docker y muchos proveedores de hosting para administrar la mayoría de las instancias de WordPress."
         ]
       },
       {
-        "title": "Girolabs S.A — Coordinador Técnico",
+        "title": "Girolabs — Coordinador Técnico",
         "duration": "Sep 2019 — Feb 2020",
         "tasks": [
-          "Ayudar a resolver problemas con implementaciones que no permitían que el equipo progresara.",
-          "Investigar e implementar nuevas tecnologías, metodologías o herramientas en el flujo de trabajo del equipo.",
-          "Capacitar y asesorar a nuevos compañeros."
+          "Ayudé a resolver problemas con implementaciones que impedían que el equipo progresara.",
+          "Investigué e implementé nuevas tecnologías, metodologías y herramientas en el flujo de trabajo del equipo.",
+          "Capacité y asesoré a nuevos compañeros de equipo y pasantes."
         ]
       },
       {
-        "title": "Girolabs S.A — Manejador de Proyectos",
+        "title": "Girolabs — Manejador de Proyectos",
         "duration": "Jul 2019 — Sep 2019",
         "tasks": [
-          "Manejar los tiempos de los proyectos para todos nuestros clientes.",
-          "Encargado de gestionar la relación entre el cliente y el equipo."
+          "Gestioné los tiempos de los proyectos para todos nuestros clientes.",
+          "Estaba a cargo de gestionar la relación entre el cliente y el equipo."
         ]
       },
       {
-        "title": "Girolabs S.A — Desarrollador Visual y Frontend, Diseñador UI",
+        "title": "Girolabs — Desarrollador Visual y Frontend, Diseñador UI",
         "duration": "Sep 2016 — Jul 2019",
         "tasks": [
-          "Desarrollé muchos temas personalizados para Wordpress desde cero.",
-          "Estuve a cargo de producir casi todo el trabajo de desarrollo para nuestros clientes.",
-          "También a cargo del diseño de UI/UX para todos los proyectos."
+          "Desarrollé muchos temas personalizados para WordPress desde cero.",
+          "Trabajé en un par de aplicaciones con Angular e Ionic.",
+          "Estaba a cargo de producir casi todo el trabajo de desarrollo para nuestros clientes.",
+          "También a cargo del diseño UI/UX de todos los proyectos."
         ]
       }
     ]
@@ -74,25 +73,27 @@
   "skills_stack": {
     "title": "Habilidades y herramientas",
     "content": [
-      "Experto con Typescript, Angular e Ionic. También con Wordpress.",
+      "Experto en Typecript, Angular e Ionic. También en WordPress.",
       "Actualmente profundizando en React y React Native.",
-      "Para diseñar, me gusta usar Tailwind CSS, pero puedo usar cualquier librería de CSS o incluso a CSS plano.",
-      "Usé otros metaframeworks como Next.js y Astro.",
-      "Web scrapping con Puppeteer. Me encantaría probar a Playwright en un proyecto real.",
-      "Cómodo con la terminal y Linux.",
-      "Tuve que aprender el lenguaje de programación Lua ya que uso Neovim como mi editor de código.",
-      "Capaz de realizar tareas de DevOps.",
+      "Para diseñar me gusta usar Tailwind CSS, pero puedo cambiar a cualquier librería CSS o incluso CSS plano.",
+      "Gran conocimiento sobre algunos metaframeworks como Next.js (v13) y Astro.",
+      "Web scrapping con Puppeteer.",
+      "Tuve que aprender el lenguaje de programación Lua ya que uso Neovim como editor de código.",
+      "Últimamente estuve escribiendo algo de Python para migración/limpieza de datos y scripting.",
       "Competente con Docker.",
       "Aprendiendo mucho sobre bundlers con Vite.",
       "Cómodo usando software de diseño como Figma y Photoshop.",
-      "Experiencia con el retoque fotográfico.",
+      "Cómodo con la terminal y entornos Linux.",
+      "Capaz de realizar tareas de DevOps.",
+      "Cómodo usando software de diseño como Figma y Photoshop.",
+      "Experiencia en retoque fotográfico.",
       "Utilizo Notion y Todoist para organizarme."
     ]
   },
   "open_source": {
     "title": "Código Abierto",
     "description": [
-      "Me interesé en las herramientas que nos rodean a los desarrolladores, así que comencé a trabajar en proyectos de código abierto desde el año pasado de forma más consistente.",
+      "Me interesé en las herramientas que nos rodean a los desarrolladores, así que comencé a contribuir al código abierto desde 2022 de forma más consistente.",
       "Mis propios proyectos:"
     ]
   },

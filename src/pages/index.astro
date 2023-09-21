@@ -1,19 +1,19 @@
 ---
-import { changeLanguage, t } from "i18next";
-import { Icon } from "astro-icon";
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Title from "../components/Title.astro";
-import Container from "../components/Container.astro";
-import Sidebar from "../components/Sidebar.astro";
-import PrintButton from "../components/PrintButton.astro";
+import { changeLanguage, t } from 'i18next'
+import { Icon } from 'astro-icon'
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header.astro'
+import Title from '../components/Title.astro'
+import Container from '../components/Container.astro'
+import Sidebar from '../components/Sidebar.astro'
+import PrintButton from '../components/PrintButton.astro'
 
-changeLanguage("en");
+changeLanguage('en')
 
 function yearsSince(start: Date) {
-  const ageDifMs = Date.now() - start.getTime();
-  const ageDate = new Date(ageDifMs);
-  return Math.abs(ageDate.getUTCFullYear() - 1970);
+  const ageDifMs = Date.now() - start.getTime()
+  const ageDate = new Date(ageDifMs)
+  return Math.abs(ageDate.getUTCFullYear() - 1970)
 }
 ---
 
@@ -31,30 +31,30 @@ function yearsSince(start: Date) {
       <Container>
         <div class="space-y-8">
           <section>
-            <Title>{t("about_me.title")}</Title>
+            <Title>{t('about_me.title')}</Title>
             {
-              t("about_me.content", {
-                age: yearsSince(new Date("1998-01-23")),
-                yearsOfExperience: yearsSince(new Date("2016-09-14")),
+              t('about_me.content', {
+                age: yearsSince(new Date('1998-01-23')),
+                yearsOfExperience: yearsSince(new Date('2016-09-14')),
                 returnObjects: true,
               }).map((text: unknown) => <p>{text}</p>)
             }
           </section>
 
           <section>
-            <Title>{t("work_experience.title")}</Title>
+            <Title>{t('work_experience.title')}</Title>
             <div class="space-y-6">
               {
-                t("work_experience.positions", {
+                t('work_experience.positions', {
                   returnObjects: true,
-                }).map((position) => (
+                }).map(position => (
                   <div>
                     <h3 class="font-semibold">{position.title}</h3>
                     <p>
                       <small>{position.duration}</small>
                     </p>
                     <ul>
-                      {position.tasks.map((task) => (
+                      {position.tasks.map(task => (
                         <li>{task}</li>
                       ))}
                     </ul>
@@ -65,22 +65,22 @@ function yearsSince(start: Date) {
           </section>
 
           <section>
-            <Title>{t("skills_stack.title")}</Title>
+            <Title>{t('skills_stack.title')}</Title>
             <ul>
               {
-                t("skills_stack.content", {
+                t('skills_stack.content', {
                   returnObjects: true,
-                }).map((text) => <li>{text}</li>)
+                }).map(text => <li>{text}</li>)
               }
             </ul>
           </section>
 
           <section>
-            <Title>{t("open_source.title")}</Title>
+            <Title>{t('open_source.title')}</Title>
             {
-              t("open_source.description", {
+              t('open_source.description', {
                 returnObjects: true,
-              }).map((text) => <p>{text}</p>)
+              }).map(text => <p>{text}</p>)
             }
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
               <div>
@@ -158,8 +158,8 @@ function yearsSince(start: Date) {
           </section>
 
           <section>
-            <Title>{t("languages.title")}</Title>
-            <p>{t("languages.content")}</p>
+            <Title>{t('languages.title')}</Title>
+            <p>{t('languages.content')}</p>
           </section>
         </div>
 
@@ -171,7 +171,7 @@ function yearsSince(start: Date) {
           <a
             href="https://github.com/olrtg/resume"
             target="_blank"
-            class="text-link">{t("button.repo")}</a
+            class="text-link">{t('button.repo')}</a
           >
         </footer>
       </Container>
