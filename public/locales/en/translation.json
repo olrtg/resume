@@ -27,7 +27,7 @@
         "tasks": [
           "Maintained primarily a Web App and a Mobile App. Worked a lot with React, React Native, MUI and some Redux.",
           "Built an API that outputs well designed and localized email templates. Built with Next.js, MJML and MDX.",
-          "Kickstarted the migration of the Web App project (80K LOC) to Typescript (now 43.6% migrated) and TanStack Query. Resulting in a huge reduction of bugs and far more confidence when refactoring.",
+          "Kickstarted the migration of the Web App project (80K LOC) to Typescript (now 44.4% migrated) and TanStack Query. Resulting in a huge reduction of bugs and far more confidence when refactoring.",
           "Containerized a huge Spring Boot/PostgreSQL application with Docker. Giving the frontend team a better development experience when integrating features with the backend.",
           "Migrated the whole Web App frontend project from Create React App (Webpack) to Vite. Reducing the development build time from 1 minute and 30 seconds to less than 1.2 seconds, saving us countless hours in the long run."
         ]
