@@ -28,8 +28,9 @@
           "Maintaining primarily a Web App and a Mobile App. Worked a lot with React, React Native, MUI and Redux.",
           "Built an API that outputs well designed and localized email templates. Built with Next.js, MJML and MDX.",
           "Leading the migration of the Web App project (80K LOC) to Typescript (now 54.0% migrated) and TanStack Query. Which is resulting in a huge reduction of bugs and far more confidence when refactoring.",
-          "Containerized a huge Spring Boot/PostgreSQL application with Docker. Giving the frontend team a better development experience when integrating features with the backend.",
-          "Migrated the whole Web App frontend project from Create React App (Webpack) to Vite. Reducing the development build time from 1 minute and 30 seconds to less than 1.2 seconds, saving us countless hours in the long run."
+          "To this date, through various reimplementations, I have reduced the costs of our operations by approximately $1547.",
+          "Migrated the whole Web App frontend project from Create React App (Webpack) to Vite. Reducing the development build time from 1 minute and 30 seconds to less than 1.2 seconds, saving us countless hours in the long run.",
+          "Containerized a huge Spring Boot/PostgreSQL application with Docker. Giving the frontend team a better development experience when integrating features with the backend."
         ]
       },
       {
