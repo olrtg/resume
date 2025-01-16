@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ['Space Grotesk', 'sans-serif'],
+      sans: ['Bricolage Grotesque', 'sans-serif'],
     },
   },
   plugins: [],

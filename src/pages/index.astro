@@ -8,6 +8,9 @@ import Title from "../components/Title.astro";
 import Container from "../components/Container.astro";
 import Sidebar from "../components/Sidebar.astro";
 import PrintButton from "../components/PrintButton.astro";
+import Badge from "../components/Badge.astro";
+import GitHubLinkWithStars from "../components/GitHubLinkWithStars.astro";
+import NpmLinkWithDownloads from "../components/NpmLinkWithDownloads.astro";
 
 changeLanguage("en");
 
@@ -54,6 +57,11 @@ function yearsSince(start: Date) {
                     <p>
                       <small>{position.duration}</small>
                     </p>
+                    <p class="space-x-2">
+                      {position.tools.map(tool => (
+                        <Badge>{tool}</Badge>
+                      ))}
+                    </p>
                     <ul>
                       {position.tasks.map(task => (
                         <li>{task}</li>
@@ -85,80 +93,45 @@ function yearsSince(start: Date) {
             }
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
               <div>
-                <h3 class="font-semibold">emmet-language-server</h3>
-                <p class="!mb-2">A language server for emmet.io</p>
+                <Badge>{t('site.most_popular')}</Badge>
+                <h3 class="font-semibold mt-2">emmet-language-server</h3>
+                <p>A language server for emmet.io</p>
                 <div class="flex space-x-4 text-lg">
-                  <a
-                    href="https://www.npmjs.com/package/@olrtg/emmet-language-server"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><Icon pack="mdi" name="npm-variant-outline" class="h-6" />
-                  </a>
-                  <a href="https://github.com/olrtg/emmet-language-server">
-                    <Icon pack="mdi" name="github" class="h-6" />
-                  </a>
+                  <NpmLinkWithDownloads
+                    package="@olrtg/emmet-language-server"
+                  />
+                  <GitHubLinkWithStars repo="emmet-language-server" />
+                </div>
+              </div>
+
+              <div>
+                <Badge>{t('site.in_development')}</Badge>
+                <h3 class="font-semibold mt-2">nvim-i18n</h3>
+                <p>A plugin to improve your workflow with i18n</p>
+                <div class="flex space-x-4 text-lg">
+                  <GitHubLinkWithStars repo="nvim-i18n" />
+                </div>
+              </div>
+
+              <div>
+                <h3 class="font-semibold">nvim-emmet</h3>
+                <p>
+                  A plugin that adds integration between Neovim and
+                  emmet-language-server.
+                </p>
+                <div class="flex space-x-4 text-lg">
+                  <GitHubLinkWithStars repo="nvim-emmet" />
                 </div>
               </div>
 
               <div>
                 <h3 class="font-semibold">nvim-rename-state</h3>
-                <p class="!mb-2">
+                <p>
                   Rename the getter and the setter of a state hook in
                   react/solidjs at the same time.
                 </p>
                 <div class="flex space-x-4 text-lg">
-                  <a href="https://github.com/olrtg/nvim-rename-state">
-                    <Icon pack="mdi" name="github" class="h-6" />
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <h3 class="font-semibold">macd</h3>
-                <p class="!mb-2">macOS defaults for humans.</p>
-                <div class="flex space-x-4 text-lg">
-                  <a
-                    href="https://www.npmjs.com/package/@olrtg/macd"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><Icon pack="mdi" name="npm-variant-outline" class="h-6" />
-                  </a>
-                  <a href="https://github.com/olrtg/macd"
-                    ><Icon pack="mdi" name="github" class="h-6" />
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <h3 class="font-semibold">Venus</h3>
-                <p class="!mb-2">
-                  Opinionated Vite starter template for modern React development
-                </p>
-                <div class="flex space-x-4 text-lg">
-                  <a href="https://github.com/olrtg/venus"
-                    ><Icon pack="mdi" name="github" class="h-6" />
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <h3 class="font-semibold">bulma-fab-button</h3>
-                <p class="!mb-2">
-                  A Bulma&apos;s extension for FABs (Floating Action Buttons)
-                </p>
-                <div class="flex space-x-4 text-lg">
-                  <a
-                    href="https://www.npmjs.com/package/bulma-fab-button"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><Icon pack="mdi" name="npm-variant-outline" class="h-6" />
-                  </a>
-                  <a
-                    href="https://github.com/olrtg/bulma-fab-button"
-                    target="_blank"
-                    rel="noreferrer"
-                    ><Icon pack="mdi" name="github" class="h-6" />
-                  </a>
+                  <GitHubLinkWithStars repo="nvim-rename-state" />
                 </div>
               </div>
             </div>

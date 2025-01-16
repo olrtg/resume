@@ -1,6 +1,11 @@
 {
   "site": {
-    "title": "Currículum"
+    "title": "Currículum",
+    "downloads": "descargas",
+    "last_week": "semana pasada",
+    "stars": "estrellas",
+    "most_popular": "Más popular",
+    "in_development": "En desarrollo"
   },
   "button": {
     "toggle_dark": "Oscuro",
@@ -24,11 +29,19 @@
       {
         "title": "Fundación Paraguaya (Poverty Stoplight) — Desarrollador Frontend Senior",
         "duration": "Mar 2022 — Presente",
+        "tools": [
+          "React/Next.js",
+          "RN/Expo",
+          "TypeScript",
+          "Google Maps/Mapbox",
+          "Vite"
+        ],
         "tasks": [
           "Manteniendo principalmente una aplicación web y una aplicación móvil. Trabajé mucho con React, React Native, MUI y Redux.",
           "Desarrollé una API que genera plantillas de correo electrónico bien diseñadas con soporte para múltiples idiomas. Construida con Next.js, MJML y MDX.",
           "Liderando la migración del proyecto de aplicación web (80K LOC) a Typecript (ahora migrado en un 70,0%) y TanStack Query. Lo que está resultando en una enorme reducción de errores y mucha más confianza al refactorizar.",
           "Hasta la fecha, a través de varias reimplementaciones, he reducido el costo mensual de nuestras operaciones en aproximadamente $1547.",
+          "Adopté Expo para nuestra aplicación móvil. Esto mejoró la experiencia de desarrollo al trabajar con el proyecto, redujo la cantidad de librerías deprecadas o con un mantenimiento no tan bueno y nos permitirá movernos más rápido en el futuro.",
           "Migré toda la aplicación web de Create React App (Webpack) a Vite. Reduciendo el tiempo de desarrollo de 1 minuto y 30 segundos a menos de 1,2 segundos, lo que nos ahorró incontables horas a largo plazo.",
           "Containericé una enorme aplicación Spring Boot/PostgreSQL con Docker. Dándole al equipo de frontend una mejor experiencia de desarrollo al integrar funciones con el backend."
         ]
@@ -36,6 +49,7 @@
       {
         "title": "Independiente",
         "duration": "Feb 2020 — Mar 2022",
+        "tools": ["Angular", "Ionic", "Capacitor", "RxJS", "WordPress"],
         "tasks": [
           "Trabajé en muchos proyectos con WordPress y su ecosistema. Especialmente usando Elementor, WooCommerce y Crocoblock.",
           "Desarrollé una aplicación móvil y una aplicación web (sitio de administración para la aplicación móvil) para uno de los clubes sociales más grandes de mi país. Construida con Angular e Ionic. También aprendí mucho sobre RxJS.",
@@ -45,6 +59,7 @@
       {
         "title": "Girolabs — Coordinador Técnico",
         "duration": "Sep 2019 — Feb 2020",
+        "tools": [],
         "tasks": [
           "Ayudé a resolver problemas con implementaciones que impedían que el equipo progresara.",
           "Investigué e implementé nuevas tecnologías, metodologías y herramientas en el flujo de trabajo del equipo.",
@@ -54,6 +69,7 @@
       {
         "title": "Girolabs — Manejador de Proyectos",
         "duration": "Jul 2019 — Sep 2019",
+        "tools": [],
         "tasks": [
           "Gestioné los tiempos de los proyectos para todos nuestros clientes.",
           "Estaba a cargo de gestionar la relación entre el cliente y el equipo."
@@ -62,6 +78,7 @@
       {
         "title": "Girolabs — Desarrollador Visual y Frontend, Diseñador UI",
         "duration": "Sep 2016 — Jul 2019",
+        "tools": ["Angular", "Ionic", "Cordova", "WordPress"],
         "tasks": [
           "Desarrollé muchos temas personalizados para WordPress desde cero.",
           "Trabajé en un par de aplicaciones con Angular e Ionic.",
@@ -86,15 +103,14 @@
       "Cómodo con la terminal y entornos Linux.",
       "Capaz de realizar tareas de DevOps.",
       "Cómodo usando software de diseño como Figma y Photoshop.",
-      "Experiencia en retoque fotográfico.",
-      "Utilizo Notion y Todoist para organizarme."
+      "Experiencia en retoque fotográfico."
     ]
   },
   "open_source": {
     "title": "Código Abierto",
     "description": [
       "Me interesé en las herramientas que nos rodean a los desarrolladores, así que comencé a contribuir al código abierto desde 2022 de forma más consistente.",
-      "Mis propios proyectos:"
+      "Algunos de mis propios proyectos:"
     ]
   },
   "languages": {

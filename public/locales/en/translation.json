@@ -1,6 +1,11 @@
 {
   "site": {
-    "title": "Resume"
+    "title": "Resume",
+    "downloads": "downloads",
+    "last_week": "last week",
+    "stars": "stars",
+    "most_popular": "Most popular",
+    "in_development": "In development"
   },
   "button": {
     "toggle_dark": "Dark",
@@ -24,11 +29,19 @@
       {
         "title": "Fundación Paraguaya (Poverty Stoplight) — Senior Frontend Developer",
         "duration": "Mar 2022 — Present",
+        "tools": [
+          "React/Next.js",
+          "RN/Expo",
+          "TypeScript",
+          "Google Maps/Mapbox",
+          "Vite"
+        ],
         "tasks": [
           "Maintaining primarily a Web App and a Mobile App. Worked a lot with React, React Native, MUI and Redux.",
           "Built an API that outputs well designed and localized email templates. Built with Next.js, MJML and MDX.",
           "Leading the migration of the Web App project (80K LOC) to Typescript (now 70.0% migrated) and TanStack Query. Which is resulting in a huge reduction of bugs and far more confidence when refactoring.",
           "To this date, through various reimplementations, I have reduced the monthly cost of our operations by approximately $1547.",
+          "Adopted Expo for our mobile application. Improving the development experience when working with the project, reduced the amount of deprecated/not-so-well maintained libraries and will allow us to move faster in the future.",
           "Migrated the whole Web App frontend project from Create React App (Webpack) to Vite. Reducing the development build time from 1 minute and 30 seconds to less than 1.2 seconds, saving us countless hours in the long run.",
           "Containerized a huge Spring Boot/PostgreSQL application with Docker. Giving the frontend team a better development experience when integrating features with the backend."
         ]
@@ -36,6 +49,7 @@
       {
         "title": "Freelance",
         "duration": "Feb 2020 — Mar 2022",
+        "tools": ["Angular", "Ionic", "Capacitor", "RxJS", "WordPress"],
         "tasks": [
           "Worked on a lot of projects with WordPress and its ecosystem. Especially using Elementor, WooCommerce and Crocoblock.",
           "Developed a Mobile App and a Web App (admin site for the Mobile App) for one of the largest social clubs in my country. Built with Angular and Ionic. Also learned a lot about RxJS.",
@@ -45,6 +59,7 @@
       {
         "title": "Girolabs — Technical Coordinator",
         "duration": "Sep 2019 — Feb 2020",
+        "tools": [],
         "tasks": [
           "Helped out to solve issues with implementations that prevented the team from making progress.",
           "Researched and implemented new technologies, methodologies and tools into the team's workflow.",
@@ -54,6 +69,7 @@
       {
         "title": "Girolabs — Project Manager",
         "duration": "Jul 2019 — Sep 2019",
+        "tools": [],
         "tasks": [
           "Managed the timings of the projects for all of our customers.",
           "Was in charge of managing the relationship between the client and the team."
@@ -62,6 +78,7 @@
       {
         "title": "Girolabs — Visual & Frontend Developer, UI Designer",
         "duration": "Sep 2016 — Jul 2019",
+        "tools": ["Angular", "Ionic", "Cordova", "WordPress"],
         "tasks": [
           "Developed a lot of custom themes for WordPress from scratch.",
           "Worked in a couple of apps with Angular and Ionic.",
@@ -86,15 +103,14 @@
       "Comfortable with the terminal and Linux environments.",
       "Capable of doing DevOps tasks.",
       "Comfortable using design software such as Figma and Photoshop.",
-      "Experience with photo retouching.",
-      "I use Notion and Todoist to organize myself."
+      "Experience with photo retouching."
     ]
   },
   "open_source": {
     "title": "Open Source",
     "description": [
       "I've got interested in the tooling that surround us developers so, I started contributing to open source since 2022 in a more consistent basis.",
-      "My own projects:"
+      "Some of my own projects:"
     ]
   },
   "languages": {

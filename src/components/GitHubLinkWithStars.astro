@@ -1,0 +1,33 @@
+---
+import { Icon } from 'astro-icon'
+
+interface Props {
+  repo: string
+}
+
+const { repo } = Astro.props
+
+const isDev = import.meta.env.MODE === 'development'
+// NOTE: We're easily hitting GitHub's API rate limit, so we're using a fake
+// response for development. I don't want to create an API key for this.
+const devPromise = (() => {
+  const body = JSON.stringify({ stargazers_count: 100 })
+  return Promise.resolve(new Response(body))
+})()
+
+const response = isDev
+  ? await devPromise
+  : await fetch(`https://api.github.com/repos/olrtg/${repo}`)
+const data = await response.json()
+const stars = data.stargazers_count.toLocaleString()
+---
+
+<a
+  href={`https://github.com/olrtg/${repo}`}
+  class="flex items-center"
+  target="_blank"
+  rel="noreferrer"
+>
+  <Icon pack="mdi" name="github" class="h-6" />
+  <small class="ml-1">{stars} stars</small>
+</a>
