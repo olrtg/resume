@@ -1,7 +1,6 @@
 ---
 import { changeLanguage, t } from "i18next";
 import { Trans } from "astro-i18next/components";
-import { Icon } from "astro-icon";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Title from "../components/Title.astro";
@@ -11,13 +10,31 @@ import PrintButton from "../components/PrintButton.astro";
 import Badge from "../components/Badge.astro";
 import GitHubLinkWithStars from "../components/GitHubLinkWithStars.astro";
 import NpmLinkWithDownloads from "../components/NpmLinkWithDownloads.astro";
+import dayjs from "dayjs";
+import duration from "dayjs/plugin/duration";
 
 changeLanguage("en");
 
-function yearsSince(start: Date) {
-    const ageDifMs = Date.now() - start.getTime();
-    const ageDate = new Date(ageDifMs);
-    return Math.abs(ageDate.getUTCFullYear() - 1970);
+dayjs.extend(duration);
+function yearsSince(date: dayjs.ConfigType) {
+    const currentDate = dayjs();
+    const startDate = dayjs(date);
+    return currentDate.diff(startDate, "year");
+}
+function formatDate(date: dayjs.ConfigType) {
+    return dayjs(date).format("MMM YYYY");
+}
+function calculateDuration(startDate: dayjs.ConfigType, endDate: dayjs.ConfigType) {
+    const start = dayjs(startDate);
+    const end = dayjs(endDate);
+    const years = end.diff(start, "year");
+    // Subtract years and calculate remaining months
+    const afterYears = start.add(years, "year");
+    const months = end.diff(afterYears, "month");
+    // Format the output
+    const yearsText = years > 0 ? `${years}yrs ` : "";
+    const monthsText = months > 0 ? `${months}mos` : "";
+    return `${yearsText}${monthsText}`.trim();
 }
 ---
 
@@ -38,8 +55,8 @@ function yearsSince(start: Date) {
             <Title>{t('about_me.title')}</Title>
             {
               t('about_me.content', {
-                age: yearsSince(new Date('1998-01-23')),
-                yearsOfExperience: yearsSince(new Date('2016-09-14')),
+                age: yearsSince('1998-01-23'),
+                yearsOfExperience: yearsSince('2016-09-14'),
                 returnObjects: true,
               }).map((text: unknown) => <p>{text}</p>)
             }
@@ -55,7 +72,16 @@ function yearsSince(start: Date) {
                   <div>
                     <h3 class="font-semibold">{position.title}</h3>
                     <p>
-                      <small>{position.duration}</small>
+                      <small>
+                        {formatDate(position.duration[0])} —{' '}
+                        {position.duration[1]
+                          ? formatDate(position.duration[1])
+                          : t('site.present')}
+
+                        <!-- prettier-ignore-start -->
+                        ({calculateDuration(position.duration[0], position.duration[1] ?? dayjs())})
+                        <!-- prettier-ignore-end -->
+                      </small>
                     </p>
                     <p class="space-x-2">
                       {position.tools.map(tool => (

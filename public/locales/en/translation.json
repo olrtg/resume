@@ -5,7 +5,8 @@
     "last_week": "last week",
     "stars": "stars",
     "most_popular": "Most popular",
-    "in_development": "In development"
+    "in_development": "In development",
+    "present": "Present"
   },
   "button": {
     "toggle_dark": "Dark",
@@ -28,7 +29,7 @@
     "positions": [
       {
         "title": "Fundación Paraguaya (Poverty Stoplight) — Senior Frontend Developer",
-        "duration": "Mar 2022 — Present",
+        "duration": ["2022-03-01", null],
         "tools": [
           "React/Next.js",
           "RN/Expo",
@@ -48,7 +49,7 @@
       },
       {
         "title": "Freelance",
-        "duration": "Feb 2020 — Mar 2022",
+        "duration": ["2020-02-01", "2022-03-01"],
         "tools": ["Angular", "Ionic", "Capacitor", "RxJS", "WordPress"],
         "tasks": [
           "Worked on a lot of projects with WordPress and its ecosystem. Especially using Elementor, WooCommerce and Crocoblock.",
@@ -58,7 +59,7 @@
       },
       {
         "title": "Girolabs — Technical Coordinator",
-        "duration": "Sep 2019 — Feb 2020",
+        "duration": ["2019-08-01", "2020-02-01"],
         "tools": [],
         "tasks": [
           "Helped out to solve issues with implementations that prevented the team from making progress.",
@@ -68,7 +69,7 @@
       },
       {
         "title": "Girolabs — Project Manager",
-        "duration": "Jul 2019 — Sep 2019",
+        "duration": ["2019-07-01", "2019-08-01"],
         "tools": [],
         "tasks": [
           "Managed the timings of the projects for all of our customers.",
@@ -77,7 +78,7 @@
       },
       {
         "title": "Girolabs — Visual & Frontend Developer, UI Designer",
-        "duration": "Sep 2016 — Jul 2019",
+        "duration": ["2016-08-01", "2019-07-01"],
         "tools": ["Angular", "Ionic", "Cordova", "WordPress"],
         "tasks": [
           "Developed a lot of custom themes for WordPress from scratch.",
