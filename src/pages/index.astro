@@ -68,9 +68,7 @@ function calculateDuration(
             <Title>{t('work_experience.title')}</Title>
             <div class="space-y-6">
               {
-                t('work_experience.positions', {
-                  returnObjects: true,
-                }).map((position) => (
+                t('work_experience.positions').map((position) => (
                   <div>
                     <h3 class="font-semibold">{position.title}</h3>
                     <p>
@@ -106,21 +104,13 @@ function calculateDuration(
           <section>
             <Title>{t('skills_stack.title')}</Title>
             <ul>
-              {
-                t('skills_stack.content', {
-                  returnObjects: true,
-                }).map((text) => <li>{text}</li>)
-              }
+              {t('skills_stack.content').map((text) => <li>{text}</li>)}
             </ul>
           </section>
 
           <section>
             <Title>{t('open_source.title')}</Title>
-            {
-              t('open_source.description', {
-                returnObjects: true,
-              }).map((text) => <p>{text}</p>)
-            }
+            {t('open_source.description').map((text) => <p>{text}</p>)}
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
               <div>
                 <Badge>{t('site.most_popular')}</Badge>
