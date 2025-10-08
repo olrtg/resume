@@ -20,7 +20,7 @@ button.text-link {
 
 a:hover,
 button:hover {
-  @apply text-green-800 border-green-800;
+  @apply border-green-800 text-green-800;
 }
 
 p:not(:last-child) {
@@ -33,7 +33,7 @@ ul {
 
 ul li:before {
   content: '◆';
-  @apply text-green-800 text-sm pr-2;
+  @apply pr-2 text-sm text-green-800;
 }
 
 ul li {
@@ -45,7 +45,7 @@ small {
 }
 
 code {
-  @apply p-1 text-sm text-green-800 bg-green-50 rounded;
+  @apply rounded bg-green-50 p-1 text-sm text-green-800;
 }
 
 /* Dark mode */
@@ -60,7 +60,7 @@ html.dark button {
 
 html.dark a:hover,
 html.dark button:hover {
-  @apply text-green-400 border-green-400;
+  @apply border-green-400 text-green-400;
 }
 
 html.dark ul li:before,
