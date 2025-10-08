@@ -11,9 +11,10 @@ const nextLanguage = languageCodes[(safeIndex + 1) % languageCodes.length]
 ---
 
 <header class="flex items-center justify-center space-x-4 pt-4 print:hidden">
-  <ThemeToggler client:only />
-  <a
-    href={nextLanguage === 'en' ? '/' : nextLanguage}
-    class="text-link uppercase">{languages[nextLanguage]}</a
+  <div>
+    <ThemeToggler client:only="solid-js" />
+  </div>
+  <a href={nextLanguage === 'en' ? '/' : nextLanguage} class="text-link"
+    >{languages[nextLanguage]}</a
   >
 </header>
