@@ -1,6 +1,9 @@
 ---
-import { Icon } from 'astro-icon'
-import { t } from 'i18next'
+import { Icon } from 'astro-icon/components'
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <aside class="space-y-4 lg:text-left text-center">
@@ -16,21 +19,21 @@ import { t } from 'i18next'
     class="flex lg:justify-start justify-center items-center space-x-4"
   >
     <a href="https://www.linkedin.com/in/olrtg" target="_blank" rel="noreferrer"
-      ><Icon pack="mdi" name="linkedin" class="h-6" />
+      ><Icon name="mdi:linkedin" class="h-6" />
     </a>
     <a
       href="https://github.com/olrtg"
       target="_blank"
       rel="noreferrer"
       class="text-lg"
-      ><Icon pack="mdi" name="github" class="h-6" />
+      ><Icon name="mdi:github" class="h-6" />
     </a>
     <a
       href="https://twitter.com/olrtg_"
       target="_blank"
       rel="noreferrer"
       class="text-lg"
-      ><Icon pack="mdi" name="twitter" class="h-6" />
+      ><Icon name="mdi:twitter" class="h-6" />
     </a>
   </div>
 </aside>

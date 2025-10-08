@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from 'astro-icon/components'
 
 interface Props {
   repo: string
@@ -28,6 +28,6 @@ const stars = data.stargazers_count.toLocaleString()
   target="_blank"
   rel="noreferrer"
 >
-  <Icon pack="mdi" name="github" class="h-6" />
+  <Icon name="mdi:github" class="h-6" />
   <small class="ml-1">{stars} stars</small>
 </a>

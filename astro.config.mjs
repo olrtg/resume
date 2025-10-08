@@ -1,12 +1,18 @@
+// @ts-check
 import { defineConfig } from 'astro/config'
 
-// https://astro.build/config
-import tailwind from '@astrojs/tailwind'
+import tailwindcss from '@tailwindcss/vite'
 import solidJs from '@astrojs/solid-js'
-
-import astroI18next from 'astro-i18next'
+import icon from 'astro-icon'
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), solidJs(), astroI18next()],
+  integrations: [solidJs(), icon()],
+  i18n: {
+    locales: ['en', 'es'],
+    defaultLocale: 'en',
+  },
+  vite: {
+    plugins: [tailwindcss()],
+  },
 })

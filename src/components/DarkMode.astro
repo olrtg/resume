@@ -1,11 +1,14 @@
-<script is:inline>
+<script>
   const theme = (() => {
-    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-      return localStorage.getItem('theme')
-    }
+    if (typeof localStorage === 'undefined') return 'light'
+
+    const value = localStorage.getItem('theme')
+    if (value) return value
+
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       return 'dark'
     }
+
     return 'light'
   })()
 

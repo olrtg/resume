@@ -1,6 +1,4 @@
 ---
-import { changeLanguage, t } from "i18next";
-import { Trans } from "astro-i18next/components";
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../components/Header.astro";
 import Title from "../../components/Title.astro";
@@ -12,8 +10,10 @@ import GitHubLinkWithStars from "../../components/GitHubLinkWithStars.astro";
 import NpmLinkWithDownloads from "../../components/NpmLinkWithDownloads.astro";
 import dayjs from "dayjs";
 import duration from "dayjs/plugin/duration";
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
 
-changeLanguage("es");
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 
 dayjs.extend(duration);
 function yearsSince(date: dayjs.ConfigType) {
@@ -165,14 +165,14 @@ function calculateDuration(startDate: dayjs.ConfigType, endDate: dayjs.ConfigTyp
 
           <section>
             <Title>{t('languages.title')}</Title>
-            <Trans i18nKey="languages.content">
+            <!-- <Trans i18nKey="languages.content">
               <a
                 href="https://www.efset.org/cert/8txjJV"
                 target="_blank"
                 rel="noreferrer"
                 class="text-link">C1 Advanced</a
               >
-            </Trans>
+            </Trans> -->
           </section>
         </div>
 
