@@ -5,5 +5,13 @@
 {
   "file_types": {
     "JSON": [".prettierrc"]
+  },
+
+  "context_servers": {
+    "Astro docs": {
+      "source": "custom",
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp.docs.astro.build/mcp"]
+    }
   }
 }
