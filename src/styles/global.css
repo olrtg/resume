@@ -4,6 +4,9 @@
   --font-sans: 'Bricolage Grotesque', sans-serif;
 }
 
+/* NOTE: set dark mode manually */
+@custom-variant dark (&:where(.dark, .dark *));
+
 body {
   @apply bg-stone-100 text-stone-800 antialiased;
 }
