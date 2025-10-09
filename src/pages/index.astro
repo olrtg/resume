@@ -8,22 +8,26 @@ import PrintButton from '@components/PrintButton.astro'
 import Badge from '@components/Badge.astro'
 import GitHubLinkWithStars from '@components/GitHubLinkWithStars.astro'
 import NpmLinkWithDownloads from '@components/NpmLinkWithDownloads.astro'
+import Trans from '@components/Trans.astro'
 import dayjs from 'dayjs'
 import duration from 'dayjs/plugin/duration'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 
+dayjs.extend(duration)
+
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
-dayjs.extend(duration)
 function yearsSince(date: dayjs.ConfigType) {
   const currentDate = dayjs()
   const startDate = dayjs(date)
   return currentDate.diff(startDate, 'year')
 }
+
 function formatDate(date: dayjs.ConfigType) {
   return dayjs(date).format('MMM YYYY')
 }
+
 function calculateDuration(
   startDate: dayjs.ConfigType,
   endDate: dayjs.ConfigType,
@@ -159,14 +163,14 @@ function calculateDuration(
 
           <section>
             <Title>{t('languages.title')}</Title>
-            <!-- <Trans i18nKey="languages.content">
-              <a
+            <Trans i18nKey="languages.content"
+              ><a
                 href="https://www.efset.org/cert/8txjJV"
                 target="_blank"
                 rel="noreferrer"
                 class="text-link">C1 Advanced</a
-              >
-            </Trans> -->
+              ></Trans
+            >
           </section>
         </div>
 

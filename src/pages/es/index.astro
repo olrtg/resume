@@ -6,24 +6,28 @@ import Container from '@components/Container.astro'
 import Sidebar from '@components/Sidebar.astro'
 import PrintButton from '@components/PrintButton.astro'
 import Badge from '@components/Badge.astro'
+import Trans from '@components/Trans.astro'
 import GitHubLinkWithStars from '@components/GitHubLinkWithStars.astro'
 import NpmLinkWithDownloads from '@components/NpmLinkWithDownloads.astro'
 import dayjs from 'dayjs'
 import duration from 'dayjs/plugin/duration'
 import { getLangFromUrl, useTranslations } from '../../i18n/utils'
 
+dayjs.extend(duration)
+
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
-dayjs.extend(duration)
 function yearsSince(date: dayjs.ConfigType) {
   const currentDate = dayjs()
   const startDate = dayjs(date)
   return currentDate.diff(startDate, 'year')
 }
+
 function formatDate(date: dayjs.ConfigType) {
   return dayjs(date).format('MMM YYYY')
 }
+
 function calculateDuration(
   startDate: dayjs.ConfigType,
   endDate: dayjs.ConfigType,
@@ -60,7 +64,6 @@ function calculateDuration(
               t('about_me.content', {
                 age: yearsSince('1998-01-23'),
                 yearsOfExperience: yearsSince('2016-09-14'),
-                returnObjects: true,
               }).map((text: unknown) => <p>{text}</p>)
             }
           </section>
@@ -69,9 +72,7 @@ function calculateDuration(
             <Title>{t('work_experience.title')}</Title>
             <div class="space-y-6">
               {
-                t('work_experience.positions', {
-                  returnObjects: true,
-                }).map((position) => (
+                t('work_experience.positions').map((position) => (
                   <div>
                     <h3 class="font-semibold">{position.title}</h3>
                     <p>
@@ -107,21 +108,13 @@ function calculateDuration(
           <section>
             <Title>{t('skills_stack.title')}</Title>
             <ul>
-              {
-                t('skills_stack.content', {
-                  returnObjects: true,
-                }).map((text) => <li>{text}</li>)
-              }
+              {t('skills_stack.content').map((text) => <li>{text}</li>)}
             </ul>
           </section>
 
           <section>
             <Title>{t('open_source.title')}</Title>
-            {
-              t('open_source.description', {
-                returnObjects: true,
-              }).map((text) => <p>{text}</p>)
-            }
+            {t('open_source.description').map((text) => <p>{text}</p>)}
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
               <div>
                 <Badge>{t('site.most_popular')}</Badge>
@@ -170,14 +163,14 @@ function calculateDuration(
 
           <section>
             <Title>{t('languages.title')}</Title>
-            <!-- <Trans i18nKey="languages.content">
+            <Trans i18nKey="languages.content">
               <a
                 href="https://www.efset.org/cert/8txjJV"
                 target="_blank"
                 rel="noreferrer"
                 class="text-link">C1 Advanced</a
               >
-            </Trans> -->
+            </Trans>
           </section>
         </div>
 
