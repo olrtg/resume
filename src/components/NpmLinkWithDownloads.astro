@@ -1,6 +1,9 @@
 ---
-import { Icon } from 'astro-icon'
-import { t } from 'i18next'
+import { Icon } from 'astro-icon/components'
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 
 interface Props {
   package: string
@@ -21,7 +24,7 @@ const downloads = data.downloads.toLocaleString()
   target="_blank"
   rel="noreferrer"
 >
-  <Icon pack="mdi" name="npm-variant-outline" class="h-6" />
+  <Icon name="mdi:npm-variant-outline" class="h-6" />
   <small class="ml-1"
     >{downloads} {t('site.downloads')} ({t('site.last_week')})</small
   >

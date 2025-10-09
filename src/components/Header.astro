@@ -1,16 +1,20 @@
 ---
-import i18next from 'i18next'
 import ThemeToggler from './ThemeToggler'
+import { languages } from '../i18n/ui'
+import { getLangFromUrl } from '../i18n/utils'
 
-const languages = Object.keys(i18next.services.resourceStore.data)
-const nextLanguage =
-  languages[(languages.indexOf(i18next.language) + 1) % languages.length]
+const lang = getLangFromUrl(Astro.url)
+const languageCodes = Object.keys(languages) as Array<keyof typeof languages>
+const currentIndex = languageCodes.indexOf(lang as keyof typeof languages)
+const safeIndex = currentIndex === -1 ? 0 : currentIndex
+const nextLanguage = languageCodes[(safeIndex + 1) % languageCodes.length]
 ---
 
-<header class="flex justify-center items-center pt-4 space-x-4 print:hidden">
-  <ThemeToggler client:load />
-  <a
-    href={nextLanguage === 'en' ? '/' : nextLanguage}
-    class="uppercase text-link">{nextLanguage}</a
+<header class="flex items-center justify-center space-x-4 pt-4 print:hidden">
+  <div>
+    <ThemeToggler client:only="solid-js" />
+  </div>
+  <a href={nextLanguage === 'en' ? '/' : nextLanguage} class="text-link"
+    >{languages[nextLanguage]}</a
   >
 </header>

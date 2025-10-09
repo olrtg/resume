@@ -1,14 +1,15 @@
 ---
-import { t, changeLanguage } from "i18next";
-import Layout from "../../layouts/Layout.astro";
+import Layout from '../../layouts/Layout.astro'
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
 
-changeLanguage("es");
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 
-const { pathname } = Astro.url;
+const { pathname } = Astro.url
 ---
 
 <Layout>
-  <div class="flex flex-col justify-center items-center min-h-screen">
+  <div class="flex min-h-screen flex-col items-center justify-center">
     <h1 class="text-3xl font-bold">404 - {t('not_found.title')}</h1>
     <p class="mt-2">
       {t('not_found.description')}

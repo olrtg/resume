@@ -1,47 +1,54 @@
 ---
-import { changeLanguage, t } from "i18next";
-import { Trans } from "astro-i18next/components";
-import Layout from "../../layouts/Layout.astro";
-import Header from "../../components/Header.astro";
-import Title from "../../components/Title.astro";
-import Container from "../../components/Container.astro";
-import Sidebar from "../../components/Sidebar.astro";
-import PrintButton from "../../components/PrintButton.astro";
-import Badge from "../../components/Badge.astro";
-import GitHubLinkWithStars from "../../components/GitHubLinkWithStars.astro";
-import NpmLinkWithDownloads from "../../components/NpmLinkWithDownloads.astro";
-import dayjs from "dayjs";
-import duration from "dayjs/plugin/duration";
+import Layout from '@layouts/Layout.astro'
+import Header from '@components/Header.astro'
+import Title from '@components/Title.astro'
+import Container from '@components/Container.astro'
+import Sidebar from '@components/Sidebar.astro'
+import PrintButton from '@components/PrintButton.astro'
+import Badge from '@components/Badge.astro'
+import Trans from '@components/Trans.astro'
+import GitHubLinkWithStars from '@components/GitHubLinkWithStars.astro'
+import NpmLinkWithDownloads from '@components/NpmLinkWithDownloads.astro'
+import dayjs from 'dayjs'
+import duration from 'dayjs/plugin/duration'
+import { getLangFromUrl, useTranslations } from '../../i18n/utils'
 
-changeLanguage("es");
+dayjs.extend(duration)
 
-dayjs.extend(duration);
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
 function yearsSince(date: dayjs.ConfigType) {
-    const currentDate = dayjs();
-    const startDate = dayjs(date);
-    return currentDate.diff(startDate, "year");
+  const currentDate = dayjs()
+  const startDate = dayjs(date)
+  return currentDate.diff(startDate, 'year')
 }
+
 function formatDate(date: dayjs.ConfigType) {
-    return dayjs(date).format("MMM YYYY");
+  return dayjs(date).format('MMM YYYY')
 }
-function calculateDuration(startDate: dayjs.ConfigType, endDate: dayjs.ConfigType) {
-    const start = dayjs(startDate);
-    const end = dayjs(endDate);
-    const years = end.diff(start, "year");
-    // Subtract years and calculate remaining months
-    const afterYears = start.add(years, "year");
-    const months = end.diff(afterYears, "month");
-    // Format the output
-    const yearsText = years > 0 ? `${years}yrs ` : "";
-    const monthsText = months > 0 ? `${months}mos` : "";
-    return `${yearsText}${monthsText}`.trim();
+
+function calculateDuration(
+  startDate: dayjs.ConfigType,
+  endDate: dayjs.ConfigType,
+) {
+  const start = dayjs(startDate)
+  const end = dayjs(endDate)
+  const years = end.diff(start, 'year')
+  // Subtract years and calculate remaining months
+  const afterYears = start.add(years, 'year')
+  const months = end.diff(afterYears, 'month')
+  // Format the output
+  const yearsText = years > 0 ? `${years}yrs ` : ''
+  const monthsText = months > 0 ? `${months}mos` : ''
+  return `${yearsText}${monthsText}`.trim()
 }
 ---
 
 <Layout>
   <Header />
 
-  <main class="flex flex-col max-w-6xl mx-auto lg:flex-row">
+  <main class="mx-auto flex max-w-6xl flex-col lg:flex-row">
     <div class="w-full lg:w-1/4">
       <Container>
         <Sidebar />
@@ -57,7 +64,6 @@ function calculateDuration(startDate: dayjs.ConfigType, endDate: dayjs.ConfigTyp
               t('about_me.content', {
                 age: yearsSince('1998-01-23'),
                 yearsOfExperience: yearsSince('2016-09-14'),
-                returnObjects: true,
               }).map((text: unknown) => <p>{text}</p>)
             }
           </section>
@@ -66,9 +72,7 @@ function calculateDuration(startDate: dayjs.ConfigType, endDate: dayjs.ConfigTyp
             <Title>{t('work_experience.title')}</Title>
             <div class="space-y-6">
               {
-                t('work_experience.positions', {
-                  returnObjects: true,
-                }).map(position => (
+                t('work_experience.positions').map((position) => (
                   <div>
                     <h3 class="font-semibold">{position.title}</h3>
                     <p>
@@ -77,19 +81,21 @@ function calculateDuration(startDate: dayjs.ConfigType, endDate: dayjs.ConfigTyp
                         {position.duration[1]
                           ? formatDate(position.duration[1])
                           : t('site.present')}
-
-                        <!-- prettier-ignore-start -->
-                        ({calculateDuration(position.duration[0], position.duration[1] ?? dayjs())})
-                        <!-- prettier-ignore-end -->
+                        (
+                        {calculateDuration(
+                          position.duration[0],
+                          position.duration[1] ?? dayjs(),
+                        )}
+                        )
                       </small>
                     </p>
                     <p class="space-x-2">
-                      {position.tools.map(tool => (
+                      {position.tools.map((tool) => (
                         <Badge>{tool}</Badge>
                       ))}
                     </p>
                     <ul>
-                      {position.tasks.map(task => (
+                      {position.tasks.map((task) => (
                         <li>{task}</li>
                       ))}
                     </ul>
@@ -102,25 +108,17 @@ function calculateDuration(startDate: dayjs.ConfigType, endDate: dayjs.ConfigTyp
           <section>
             <Title>{t('skills_stack.title')}</Title>
             <ul>
-              {
-                t('skills_stack.content', {
-                  returnObjects: true,
-                }).map(text => <li>{text}</li>)
-              }
+              {t('skills_stack.content').map((text) => <li>{text}</li>)}
             </ul>
           </section>
 
           <section>
             <Title>{t('open_source.title')}</Title>
-            {
-              t('open_source.description', {
-                returnObjects: true,
-              }).map(text => <p>{text}</p>)
-            }
+            {t('open_source.description').map((text) => <p>{text}</p>)}
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
               <div>
                 <Badge>{t('site.most_popular')}</Badge>
-                <h3 class="font-semibold mt-2">emmet-language-server</h3>
+                <h3 class="mt-2 font-semibold">emmet-language-server</h3>
                 <p>A language server for emmet.io</p>
                 <div class="flex space-x-4 text-lg">
                   <NpmLinkWithDownloads
@@ -132,7 +130,7 @@ function calculateDuration(startDate: dayjs.ConfigType, endDate: dayjs.ConfigTyp
 
               <div>
                 <Badge>{t('site.in_development')}</Badge>
-                <h3 class="font-semibold mt-2">nvim-i18n</h3>
+                <h3 class="mt-2 font-semibold">nvim-i18n</h3>
                 <p>A plugin to improve your workflow with i18n</p>
                 <div class="flex space-x-4 text-lg">
                   <GitHubLinkWithStars repo="nvim-i18n" />
@@ -177,7 +175,7 @@ function calculateDuration(startDate: dayjs.ConfigType, endDate: dayjs.ConfigTyp
         </div>
 
         <footer
-          class="mt-8 space-x-4 flex items-center justify-center print:hidden"
+          class="mt-8 flex items-center justify-center space-x-4 print:hidden"
         >
           <PrintButton />
 

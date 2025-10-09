@@ -1,0 +1,29 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+interface Props {
+  i18nKey: string
+}
+
+const { i18nKey } = Astro.props
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
+const translation = t(i18nKey as any) as string
+const slotContent = await Astro.slots.render('default')
+
+let result = translation.replace(/<0>.*?<\/0>/g, slotContent)
+
+const slots = Astro.slots as any
+for (let i = 1; i < 10; i++) {
+  const slotName = i.toString()
+  if (await slots.has(slotName)) {
+    const content = await slots.render(slotName)
+    const regex = new RegExp(`<${i}>.*?<\\/${i}>`, 'g')
+    result = result.replace(regex, content)
+  }
+}
+---
+
+<Fragment set:html={result} />
