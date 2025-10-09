@@ -29,7 +29,7 @@ export const ui = {
       {
         title:
           'Fundación Paraguaya (Poverty Stoplight) — Senior Frontend Developer',
-        duration: ['2022-03-01', null],
+        duration: ['2022-03-01', '2025-02-18'],
         tools: [
           'React/Next.js',
           'RN/Expo',
