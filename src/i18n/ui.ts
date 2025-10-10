@@ -29,7 +29,7 @@ export const ui = {
       {
         title: 'WillDom (DengueChatPlus) — Fullstack Developer',
         duration: ['2025-02-19'],
-        tools: ['RN/Expo', 'React', 'TypeScript', 'Ruby on Rails'],
+        tools: ['Expo', 'React', 'TypeScript', 'Ruby on Rails'],
         tasks: [
           'Assumed sole ownership of the entire stack, including the mobile app, web app, and REST API.',
           'Resolved several long-standing issues in our offline layer.',
@@ -149,7 +149,7 @@ export const ui = {
       {
         title: 'WillDom (DengueChatPlus) — Desarrollador Fullstack',
         duration: ['2025-02-19'],
-        tools: ['RN/Expo', 'React', 'TypeScript', 'Ruby on Rails'],
+        tools: ['Expo', 'React', 'TypeScript', 'Ruby on Rails'],
         tasks: [
           'Asumí la responsabilidad total de toda la pila, incluida la aplicación móvil, la aplicación web y la API REST.',
           'Resolví varias incidencias de larga data en nuestra capa sin conexión.',
