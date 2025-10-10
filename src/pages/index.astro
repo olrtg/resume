@@ -72,35 +72,33 @@ function calculateDuration(
             <Title>{t('work_experience.title')}</Title>
             <div class="space-y-6">
               {
-                t('work_experience.positions').map((position) => (
-                  <div>
-                    <h3 class="font-semibold">{position.title}</h3>
-                    <p>
-                      <small>
-                        {formatDate(position.duration[0])} —{' '}
-                        {position.duration[1]
-                          ? formatDate(position.duration[1])
-                          : t('site.present')}
-                        (
-                        {calculateDuration(
-                          position.duration[0],
-                          position.duration[1] ?? dayjs(),
-                        )}
-                        )
-                      </small>
-                    </p>
-                    <p class="space-x-2">
-                      {position.tools.map((tool) => (
-                        <Badge>{tool}</Badge>
-                      ))}
-                    </p>
-                    <ul>
-                      {position.tasks.map((task) => (
-                        <li>{task}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))
+                t('work_experience.positions').map((position) => {
+                  const [start, end] = position.duration
+                  const durationText = calculateDuration(start, end ?? dayjs())
+
+                  return (
+                    <div>
+                      <h3 class="font-semibold">{position.title}</h3>
+                      <p>
+                        <small>
+                          {formatDate(start)} —{' '}
+                          {end ? formatDate(end) : t('site.present')}
+                          {durationText && <span>({durationText})</span>}
+                        </small>
+                      </p>
+                      <p class="space-x-2">
+                        {position.tools.map((tool) => (
+                          <Badge>{tool}</Badge>
+                        ))}
+                      </p>
+                      <ul>
+                        {position.tasks.map((task) => (
+                          <li>{task}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )
+                })
               }
             </div>
           </section>

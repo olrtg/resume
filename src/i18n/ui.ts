@@ -27,6 +27,16 @@ export const ui = {
     'work_experience.title': 'Work Experience',
     'work_experience.positions': [
       {
+        title: 'WillDom (DengueChatPlus) — Fullstack Developer',
+        duration: ['2025-02-19'],
+        tools: ['Expo', 'React', 'TypeScript', 'Ruby on Rails'],
+        tasks: [
+          'Assumed sole ownership of the entire stack, including the mobile app, web app, and REST API.',
+          'Resolved several long-standing issues in our offline layer.',
+          'Traveled to Peru to see how the methodology was being implemented with the tools we built.',
+        ],
+      },
+      {
         title:
           'Fundación Paraguaya (Poverty Stoplight) — Senior Frontend Developer',
         duration: ['2022-03-01', '2025-02-18'],
@@ -38,10 +48,10 @@ export const ui = {
           'Vite',
         ],
         tasks: [
-          'Maintaining primarily a Web App and a Mobile App. Worked a lot with React, React Native, MUI and Redux.',
+          'Maintained primarily a Web App and a Mobile App, working extensively with React, React Native, MUI and Redux.',
           'Built an API that outputs well designed and localized email templates. Built with Next.js, MJML and MDX.',
-          'Leading the migration of the Web App project (80K LOC) to Typescript (now 70.0% migrated) and TanStack Query. Which is resulting in a huge reduction of bugs and far more confidence when refactoring.',
-          'To this date, through various reimplementations, I have reduced the monthly cost of our operations by approximately $1547.',
+          'Led the migration of the Web App project (80K LOC) to TypeScript and TanStack Query, resulting in a huge reduction of bugs and far more confidence when refactoring.',
+          'Through various reimplementations, I reduced the monthly cost of our operations by approximately $1547.',
           'Adopted Expo for our mobile application. Improving the development experience when working with the project, reduced the amount of deprecated/not-so-well maintained libraries and will allow us to move faster in the future.',
           'Migrated the whole Web App frontend project from Create React App (Webpack) to Vite. Reducing the development build time from 1 minute and 30 seconds to less than 1.2 seconds, saving us countless hours in the long run.',
           'Containerized a huge Spring Boot/PostgreSQL application with Docker. Giving the frontend team a better development experience when integrating features with the backend.',
@@ -137,9 +147,19 @@ export const ui = {
     'work_experience.title': 'Experiencia laboral',
     'work_experience.positions': [
       {
+        title: 'WillDom (DengueChatPlus) — Desarrollador Fullstack',
+        duration: ['2025-02-19'],
+        tools: ['Expo', 'React', 'TypeScript', 'Ruby on Rails'],
+        tasks: [
+          'Asumí la responsabilidad total de toda la pila, incluida la aplicación móvil, la aplicación web y la API REST.',
+          'Resolví varias incidencias de larga data en nuestra capa sin conexión.',
+          'Viajé a Perú para observar cómo se implementaba la metodología con las herramientas que construimos.',
+        ],
+      },
+      {
         title:
           'Fundación Paraguaya (Poverty Stoplight) — Desarrollador Frontend Senior',
-        duration: ['2022-03-01', null],
+        duration: ['2022-03-01', '2025-02-18'],
         tools: [
           'React/Next.js',
           'RN/Expo',
@@ -148,10 +168,10 @@ export const ui = {
           'Vite',
         ],
         tasks: [
-          'Manteniendo principalmente una aplicación web y una aplicación móvil. Trabajé mucho con React, React Native, MUI y Redux.',
+          'Mantuve principalmente una aplicación web y una aplicación móvil, trabajando extensamente con React, React Native, MUI y Redux.',
           'Desarrollé una API que genera plantillas de correo electrónico bien diseñadas con soporte para múltiples idiomas. Construida con Next.js, MJML y MDX.',
-          'Liderando la migración del proyecto de aplicación web (80K LOC) a Typecript (ahora migrado en un 70,0%) y TanStack Query. Lo que está resultando en una enorme reducción de errores y mucha más confianza al refactorizar.',
-          'Hasta la fecha, a través de varias reimplementaciones, he reducido el costo mensual de nuestras operaciones en aproximadamente $1547.',
+          'Lideré la migración del proyecto de aplicación web (80K LOC) a TypeScript y TanStack Query, lo que resultó en una enorme reducción de errores y mucha más confianza al refactorizar.',
+          'Durante mi tiempo allí, a través de varias reimplementaciones, reduje el costo mensual de nuestras operaciones en aproximadamente $1547.',
           'Adopté Expo para nuestra aplicación móvil. Esto mejoró la experiencia de desarrollo al trabajar con el proyecto, redujo la cantidad de librerías deprecadas o con un mantenimiento no tan bueno y nos permitirá movernos más rápido en el futuro.',
           'Migré toda la aplicación web de Create React App (Webpack) a Vite. Reduciendo el tiempo de desarrollo de 1 minuto y 30 segundos a menos de 1,2 segundos, lo que nos ahorró incontables horas a largo plazo.',
           'Containericé una enorme aplicación Spring Boot/PostgreSQL con Docker. Dándole al equipo de frontend una mejor experiencia de desarrollo al integrar funciones con el backend.',
