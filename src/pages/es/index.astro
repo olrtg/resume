@@ -11,12 +11,14 @@ import GitHubLinkWithStars from '@components/GitHubLinkWithStars.astro'
 import NpmLinkWithDownloads from '@components/NpmLinkWithDownloads.astro'
 import dayjs from 'dayjs'
 import duration from 'dayjs/plugin/duration'
+import 'dayjs/locale/es'
 import { getLangFromUrl, useTranslations } from '../../i18n/utils'
-
-dayjs.extend(duration)
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+
+dayjs.extend(duration)
+dayjs.locale(lang)
 
 function yearsSince(date: dayjs.ConfigType) {
   const currentDate = dayjs()
@@ -35,13 +37,25 @@ function calculateDuration(
   const start = dayjs(startDate)
   const end = dayjs(endDate)
   const years = end.diff(start, 'year')
-  // Subtract years and calculate remaining months
   const afterYears = start.add(years, 'year')
   const months = end.diff(afterYears, 'month')
-  // Format the output
-  const yearsText = years > 0 ? `${years}yrs ` : ''
-  const monthsText = months > 0 ? `${months}mos` : ''
-  return `${yearsText}${monthsText}`.trim()
+  const parts: string[] = []
+
+  if (years > 0) {
+    const yearLabel =
+      years === 1 ? t('duration.short.year') : t('duration.short.year_plural')
+    parts.push(`${years} ${yearLabel}`)
+  }
+
+  if (months > 0) {
+    const monthLabel =
+      months === 1
+        ? t('duration.short.month')
+        : t('duration.short.month_plural')
+    parts.push(`${months} ${monthLabel}`)
+  }
+
+  return parts.join(' ')
 }
 ---
 
@@ -81,8 +95,12 @@ function calculateDuration(
                       <h3 class="font-semibold">{position.title}</h3>
                       <p>
                         <small>
-                          {formatDate(start)} —{' '}
-                          {end ? formatDate(end) : t('site.present')}
+                          <span class="capitalize">{formatDate(start)}</span> —{' '}
+                          {end ? (
+                            <span class="capitalize">{formatDate(end)}</span>
+                          ) : (
+                            t('site.present')
+                          )}
                           {durationText && <span>({durationText})</span>}
                         </small>
                       </p>
