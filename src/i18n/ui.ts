@@ -23,10 +23,10 @@ export const ui = {
     'button.pdf': 'PDF Version',
     'button.go_to_home': 'Go to home',
     'button.repo': 'Go to repo',
-    'basic.position': 'Frontend Developer',
+    'basic.position': 'Software Developer',
     'about_me.title': 'About me',
     'about_me.content': [
-      'Hello! My name is José Olórtegui, a {{age}}-year-old, self-taught frontend developer hailing from Paraguay. With over {{yearsOfExperience}} years of hands-on experience, I have honed my expertise in frontend web technologies, focusing on delivering exceptional user experiences and ensuring the highest quality in everything I create.',
+      'Hello! My name is José Olórtegui, a {{age}}-year-old, self-taught software developer hailing from Paraguay. With over {{yearsOfExperience}} years of hands-on experience, I have honed my expertise in frontend web technologies, focusing on delivering exceptional user experiences and ensuring the highest quality in everything I create.',
     ],
     'work_experience.title': 'Work Experience',
     'work_experience.positions': [
@@ -147,10 +147,10 @@ export const ui = {
     'button.pdf': 'Versión PDF',
     'button.go_to_home': 'Ir al inicio',
     'button.repo': 'Ir al repo',
-    'basic.position': 'Desarrollador Frontend',
+    'basic.position': 'Desarrollador de Software',
     'about_me.title': 'Acerca de mí',
     'about_me.content': [
-      '¡Hola! Mi nombre es José Olórtegui, un desarrollador frontend autodidacta de {{age}} años proveniente de Paraguay. Con un poco más de {{yearsOfExperience}} años de experiencia, he perfeccionado mis conocimientos en tecnologías web frontend, enfocándome en brindar experiencias de usuario excepcionales y garantizar la más alta calidad en todo lo que hago.',
+      '¡Hola! Mi nombre es José Olórtegui, un desarrollador de software autodidacta de {{age}} años proveniente de Paraguay. Con un poco más de {{yearsOfExperience}} años de experiencia, he perfeccionado mis conocimientos en tecnologías web frontend, enfocándome en brindar experiencias de usuario excepcionales y garantizar la más alta calidad en todo lo que hago.',
     ],
     'work_experience.title': 'Experiencia laboral',
     'work_experience.positions': [
