@@ -31,7 +31,7 @@ export const ui = {
     'work_experience.title': 'Work Experience',
     'work_experience.positions': [
       {
-        title: 'WillDom (DengueChatPlus) — Fullstack Developer',
+        title: 'WillDom (DengueChat+) — Fullstack Developer',
         duration: ['2025-02-19'],
         tools: ['Expo', 'React', 'TypeScript', 'Ruby on Rails'],
         tasks: [
@@ -155,7 +155,7 @@ export const ui = {
     'work_experience.title': 'Experiencia laboral',
     'work_experience.positions': [
       {
-        title: 'WillDom (DengueChatPlus) — Desarrollador Fullstack',
+        title: 'WillDom (DengueChat+) — Desarrollador Fullstack',
         duration: ['2025-02-19'],
         tools: ['Expo', 'React', 'TypeScript', 'Ruby on Rails'],
         tasks: [
