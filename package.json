@@ -15,7 +15,7 @@
     "@astrojs/solid-js": "^5.1.1",
     "@iconify-json/mdi": "^1.2.3",
     "@tailwindcss/vite": "^4.1.15",
-    "astro": "^5.14.4",
+    "astro": "^5.14.7",
     "astro-icon": "^1.1.5",
     "dayjs": "^1.11.18",
     "solid-js": "^1.9.9",
