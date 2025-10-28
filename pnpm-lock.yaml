@@ -40,8 +40,8 @@ importers:
         version: 5.9.3
     devDependencies:
       '@netlify/functions':
-        specifier: ^5.0.0
-        version: 5.0.0
+        specifier: ^5.0.1
+        version: 5.0.1
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -545,8 +545,8 @@ packages:
     resolution: {integrity: sha512-vZAL8pMuj3yPQlmHSgyaA/UQFxc6pZgU0LucFJ1+IPWGJtIzBXHRvuR4acpoP72HtyQPUHJ42s7U9GaaSGVNHg==}
     engines: {node: ^18.14.0 || >=20}
 
-  '@netlify/functions@5.0.0':
-    resolution: {integrity: sha512-gyKzl+P5SPp6P4iqykwPagSy7ODgRoQqi9TkjFJjM74FVJgxdiBQoLAmz+Pjl7kE5avJWtIvlQ+akAFaChekQQ==}
+  '@netlify/functions@5.0.1':
+    resolution: {integrity: sha512-olCwsnp0GDpjSYPfWrtUIvOsZcrRta6lxwZWfl3XxucXOw5AcGDKSqKGRElzyyZoRA8OXVh5B5NHj5Jd4PRx+A==}
     engines: {node: '>=18.0.0'}
 
   '@netlify/runtime-utils@2.2.0':
@@ -3385,7 +3385,7 @@ snapshots:
       write-file-atomic: 5.0.1
     optional: true
 
-  '@netlify/functions@5.0.0':
+  '@netlify/functions@5.0.1':
     dependencies:
       '@netlify/types': 2.1.0
 
