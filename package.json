@@ -15,14 +15,14 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
-    "@astrojs/solid-js": "^6.0.1",
+    "@astrojs/solid-js": "^7.0.1",
     "@iconify-json/mdi": "^1.2.3",
-    "@tailwindcss/vite": "^4.1.18",
-    "astro": "^6.4.8",
+    "@tailwindcss/vite": "^4.3.2",
+    "astro": "^7.1.0",
     "astro-icon": "^1.1.5",
     "dayjs": "^1.11.19",
-    "solid-js": "^1.9.11",
-    "tailwindcss": "^4.1.18",
+    "solid-js": "^1.9.14",
+    "tailwindcss": "^4.3.2",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
