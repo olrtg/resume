@@ -1,11 +1,4 @@
----
-import { getLangFromUrl, useTranslations } from '../i18n/utils'
-
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
----
-
-<button id="print" class="text-link">{t('button.pdf')}</button>
+<button id="print" class="text-link">PDF Version</button>
 
 <script>
   const ref = document.getElementById('print')

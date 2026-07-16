@@ -4,7 +4,7 @@ This Astro-based résumé site blends Astro pages, Solid components, Tailwind st
 
 ## Project Structure & Module Organization
 
-Source code lives in `src/`: page entry points under `src/pages` (English default plus `es/` locale), shared shells in `src/layouts`, view fragments in `src/components`, and localization helpers in `src/i18n`. Global styles sit in `src/styles/global.css`, while static assets belong in `public/`. Serverless automation (e.g., scheduled deploy triggers) resides in `netlify/functions/`. Avoid committing the `.astro/` cache and prefer reusing existing components before adding new directories.
+Source code lives in `src/`: page entry points under `src/pages`, shared shells in `src/layouts`, and view fragments in `src/components`. Global styles sit in `src/styles/global.css`, while static assets belong in `public/`. Serverless automation (e.g., scheduled deploy triggers) resides in `netlify/functions/`. Avoid committing the `.astro/` cache and prefer reusing existing components before adding new directories.
 
 ## Build, Test, and Development Commands
 
@@ -16,12 +16,8 @@ Astro and Solid components should be named in PascalCase (e.g., `ThemeToggler.ts
 
 ## Testing Guidelines
 
-There is no dedicated test runner yet. Instead, trust Astro’s compiler and TypeScript to guard regressions. Always run `pnpm astro check` (automatically enforced via the Husky `pre-push` hook) and manually verify pages under both locales at `http://localhost:4321` before shipping. Document any manual test steps in your pull request.
+There is no dedicated test runner yet. Instead, trust Astro’s compiler and TypeScript to guard regressions. Always run `pnpm astro check` (automatically enforced via the Husky `pre-push` hook) and manually verify the homepage and 404 page at `http://localhost:4321` before shipping. Document any manual test steps in your pull request.
 
 ## Commit & Pull Request Guidelines
 
-Follow the existing Conventional Commit style (`feat:`, `fix:`, `chore:`) seen in the Git history, keeping subjects under 72 characters. Each pull request should include: a concise summary of the change, screenshots or GIFs for visual updates, notes on localization updates, and a checklist of verification steps (`pnpm build`, browser smoke test, etc.). Link relevant issues when available and call out configuration changes impacting Netlify or environment variables.
-
-## Localization Workflow
-
-When editing text, update both the English pages and matching Spanish entries under `src/pages/es` and `src/i18n/ui.ts`. Use short, descriptive keys, group them by section, and keep placeholders identical across locales to avoid rendering mismatches.
+Follow the existing Conventional Commit style (`feat:`, `fix:`, `chore:`) seen in the Git history, keeping subjects under 72 characters. Each pull request should include: a concise summary of the change, screenshots or GIFs for visual updates, and a checklist of verification steps (`pnpm build`, browser smoke test, etc.). Link relevant issues when available and call out configuration changes impacting Netlify or environment variables.
