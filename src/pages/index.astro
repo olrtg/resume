@@ -8,16 +8,108 @@ import PrintButton from '@components/PrintButton.astro'
 import Badge from '@components/Badge.astro'
 import GitHubLinkWithStars from '@components/GitHubLinkWithStars.astro'
 import NpmLinkWithDownloads from '@components/NpmLinkWithDownloads.astro'
-import Trans from '@components/Trans.astro'
 import dayjs from 'dayjs'
 import duration from 'dayjs/plugin/duration'
-import { getLangFromUrl, useTranslations } from '../i18n/utils'
 
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
-
-dayjs.locale(lang)
 dayjs.extend(duration)
+
+const positions = [
+  {
+    title: 'WillDom (Asset LifeCycle) — Fullstack Developer',
+    duration: ['2025-11-5'],
+    tools: ['Next.js', 'TypeScript', 'Supabase'],
+    tasks: [
+      'Maintaining and shipping new features all the time for an internal web app.',
+      'Worked on a bunch perfomance-related tasks.',
+      'Leading housekeeping tasks such us: React Compiler adoption, AI tooling implementation, migration to better patterns/practices, etc.',
+    ],
+  },
+  {
+    title: 'WillDom (DengueChat+) — Fullstack Developer',
+    duration: ['2025-02-19'],
+    tools: ['Expo', 'React', 'TypeScript', 'Ruby on Rails'],
+    tasks: [
+      'Assumed sole ownership of the entire stack, including the mobile app, web app, and REST API.',
+      'Resolved several long-standing issues in our offline layer.',
+      'Traveled to Peru to see how the methodology was being implemented with the tools we built.',
+    ],
+  },
+  {
+    title:
+      'Fundación Paraguaya (Poverty Stoplight) — Senior Frontend Developer',
+    duration: ['2022-03-01', '2025-02-18'],
+    tools: [
+      'React/Next.js',
+      'RN/Expo',
+      'TypeScript',
+      'Google Maps/Mapbox',
+      'Vite',
+    ],
+    tasks: [
+      'Maintained primarily a Web App and a Mobile App, working extensively with React, React Native, MUI and Redux.',
+      'Built an API that outputs well designed and localized email templates. Built with Next.js, MJML and MDX.',
+      'Led the migration of the Web App project (80K LOC) to TypeScript and TanStack Query, resulting in a huge reduction of bugs and far more confidence when refactoring.',
+      'Through various reimplementations, I reduced the monthly cost of our operations by approximately $1547.',
+      'Adopted Expo for our mobile application. Improving the development experience when working with the project, reduced the amount of deprecated/not-so-well maintained libraries and will allow us to move faster in the future.',
+      'Migrated the whole Web App frontend project from Create React App (Webpack) to Vite. Reducing the development build time from 1 minute and 30 seconds to less than 1.2 seconds, saving us countless hours in the long run.',
+      'Containerized a huge Spring Boot/PostgreSQL application with Docker. Giving the frontend team a better development experience when integrating features with the backend.',
+    ],
+  },
+  {
+    title: 'Freelance',
+    duration: ['2020-02-01', '2022-03-01'],
+    tools: ['Angular', 'Ionic', 'Capacitor', 'RxJS', 'WordPress'],
+    tasks: [
+      'Worked on a lot of projects with WordPress and its ecosystem. Especially using Elementor, WooCommerce and Crocoblock.',
+      'Developed a Mobile App and a Web App (admin site for the Mobile App) for one of the largest social clubs in my country. Built with Angular and Ionic. Also learned a lot about RxJS.',
+      'Worked with Docker and a lot of hosting providers to manage most WordPress instances.',
+    ],
+  },
+  {
+    title: 'Girolabs — Technical Coordinator',
+    duration: ['2019-08-01', '2020-02-01'],
+    tools: [],
+    tasks: [
+      'Helped out to solve issues with implementations that prevented the team from making progress.',
+      "Researched and implemented new technologies, methodologies and tools into the team's workflow.",
+      'Trained and advised new teammates and interns.',
+    ],
+  },
+  {
+    title: 'Girolabs — Project Manager',
+    duration: ['2019-07-01', '2019-08-01'],
+    tools: [],
+    tasks: [
+      'Managed the timings of the projects for all of our customers.',
+      'Was in charge of managing the relationship between the client and the team.',
+    ],
+  },
+  {
+    title: 'Girolabs — Visual & Frontend Developer, UI Designer',
+    duration: ['2016-08-01', '2019-07-01'],
+    tools: ['Angular', 'Ionic', 'Cordova', 'WordPress'],
+    tasks: [
+      'Developed a lot of custom themes for WordPress from scratch.',
+      'Worked in a couple of apps with Angular and Ionic.',
+      'Was in charge of producing almost all of the development work for our customers.',
+      'Also in charge of the UI/UX design for all of the projects.',
+    ],
+  },
+]
+
+const skills = [
+  "Right now I'm, learning systems programming and manual memory management with Odin.",
+  'Authored various Neovim plugins in Lua.',
+  'Wrote some Python for data migration/cleaning and scripting purposes.',
+  'I love to have discussions about tooling, other programming languages, frontend frameworks or JavaScript bundlers.',
+  'Web scrapping with Puppeteer.',
+  'Proeficient with Docker.',
+  'Comfortable with the terminal and Linux environments.',
+  'Capable of doing DevOps tasks.',
+  'Did a lot of WordPress back in the day.',
+  'Comfortable using design software such as Figma and Photoshop.',
+  'Experience with photo retouching.',
+]
 
 function yearsSince(date: dayjs.ConfigType) {
   const currentDate = dayjs()
@@ -41,16 +133,12 @@ function calculateDuration(
   const parts: string[] = []
 
   if (years > 0) {
-    const yearLabel =
-      years === 1 ? t('duration.short.year') : t('duration.short.year_plural')
+    const yearLabel = years === 1 ? 'year' : 'years'
     parts.push(`${years} ${yearLabel}`)
   }
 
   if (months > 0) {
-    const monthLabel =
-      months === 1
-        ? t('duration.short.month')
-        : t('duration.short.month_plural')
+    const monthLabel = months === 1 ? 'month' : 'months'
     parts.push(`${months} ${monthLabel}`)
   }
 
@@ -72,20 +160,23 @@ function calculateDuration(
       <Container>
         <div class="space-y-8">
           <section>
-            <Title>{t('about_me.title')}</Title>
-            {
-              t('about_me.content', {
-                age: yearsSince('1998-01-23'),
-                yearsOfExperience: yearsSince('2016-09-14'),
-              }).map((text) => <p>{text}</p>)
-            }
+            <Title>About me</Title>
+            <p>
+              Hello! My name is José Olórtegui, a {
+                yearsSince('1998-01-23')
+              }-year-old, self-taught software developer hailing from Paraguay.
+              With over {yearsSince('2016-09-14')} years of hands-on experience, I
+              have honed my expertise in frontend web technologies, focusing on delivering
+              exceptional user experiences and ensuring the highest quality in everything
+              I create.
+            </p>
           </section>
 
           <section>
-            <Title>{t('work_experience.title')}</Title>
+            <Title>Work Experience</Title>
             <div class="space-y-6">
               {
-                t('work_experience.positions').map((position) => {
+                positions.map((position) => {
                   const [start, end] = position.duration
                   const durationText = calculateDuration(start, end ?? dayjs())
 
@@ -98,9 +189,9 @@ function calculateDuration(
                           {end ? (
                             <span class="capitalize">{formatDate(end)}</span>
                           ) : (
-                            t('site.present')
+                            'Present'
                           )}
-                          {durationText && <span>({durationText})</span>}
+                          {durationText && <span> ({durationText})</span>}
                         </small>
                       </p>
                       <p class="flex flex-wrap gap-1.5">
@@ -121,18 +212,23 @@ function calculateDuration(
           </section>
 
           <section>
-            <Title>{t('skills_stack.title')}</Title>
+            <Title>Skills & Stack</Title>
             <ul>
-              {t('skills_stack.content').map((text) => <li>{text}</li>)}
+              {skills.map((skill) => <li>{skill}</li>)}
             </ul>
           </section>
 
           <section>
-            <Title>{t('open_source.title')}</Title>
-            {t('open_source.description').map((text) => <p>{text}</p>)}
+            <Title>Open Source</Title>
+            <p>
+              I've got interested in the tooling that surround us developers so,
+              I started contributing to open source since 2022 in a more
+              consistent basis.
+            </p>
+            <p>Some of my own projects:</p>
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
               <div>
-                <Badge>{t('site.most_popular')}</Badge>
+                <Badge>Most popular</Badge>
                 <h3 class="mt-2 font-semibold">emmet-language-server</h3>
                 <p>A language server for emmet.io</p>
                 <div class="flex space-x-4 text-lg">
@@ -144,7 +240,7 @@ function calculateDuration(
               </div>
 
               <div>
-                <Badge>{t('site.in_development')}</Badge>
+                <Badge>In development</Badge>
                 <h3 class="mt-2 font-semibold">nvim-i18n</h3>
                 <p>A plugin to improve your workflow with i18n</p>
                 <div class="flex space-x-4 text-lg">
@@ -177,15 +273,15 @@ function calculateDuration(
           </section>
 
           <section>
-            <Title>{t('languages.title')}</Title>
-            <Trans i18nKey="languages.content"
-              ><a
+            <Title>Languages</Title>
+            <p>
+              Spanish (Native speaker), English (<a
                 href="https://www.efset.org/cert/8txjJV"
                 target="_blank"
                 rel="noreferrer"
                 class="text-link">C1 Advanced</a
-              ></Trans
-            >
+              >).
+            </p>
           </section>
         </div>
 
@@ -197,7 +293,7 @@ function calculateDuration(
           <a
             href="https://github.com/olrtg/resume"
             target="_blank"
-            class="text-link">{t('button.repo')}</a
+            class="text-link">Go to repo</a
           >
         </footer>
       </Container>
