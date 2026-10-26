@@ -162,59 +162,58 @@ function calculateDuration(
           <section>
             <Title>About me</Title>
             <p>
-              Hello! My name is José Olórtegui, a {
-                yearsSince('1998-01-23')
-              }-year-old, self-taught software developer hailing from Paraguay.
-              With over {yearsSince('2016-09-14')} years of hands-on experience, I
-              have honed my expertise in frontend web technologies, focusing on delivering
-              exceptional user experiences and ensuring the highest quality in everything
-              I create.
+              Hello! My name is José Olórtegui, a {yearsSince('1998-01-23')}
+              -year-old, self-taught software developer hailing from Paraguay.
+              With over {yearsSince('2016-09-14')} years of hands-on experience,
+              I have honed my expertise in frontend web technologies, focusing
+              on delivering exceptional user experiences and ensuring the
+              highest quality in everything I create.
             </p>
           </section>
 
           <section>
             <Title>Work Experience</Title>
             <div class="space-y-6">
-              {
-                positions.map((position) => {
-                  const [start, end] = position.duration
-                  const durationText = calculateDuration(start, end ?? dayjs())
+              {positions.map((position) => {
+                const [start, end] = position.duration
+                const durationText = calculateDuration(start, end ?? dayjs())
 
-                  return (
-                    <div>
-                      <h3 class="font-semibold">{position.title}</h3>
-                      <p>
-                        <small>
-                          <span class="capitalize">{formatDate(start)}</span> —{' '}
-                          {end ? (
-                            <span class="capitalize">{formatDate(end)}</span>
-                          ) : (
-                            'Present'
-                          )}
-                          {durationText && <span> ({durationText})</span>}
-                        </small>
-                      </p>
-                      <p class="flex flex-wrap gap-1.5">
-                        {position.tools.map((tool) => (
-                          <Badge>{tool}</Badge>
-                        ))}
-                      </p>
-                      <ul>
-                        {position.tasks.map((task) => (
-                          <li>{task}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )
-                })
-              }
+                return (
+                  <div>
+                    <h3 class="font-semibold">{position.title}</h3>
+                    <p>
+                      <small>
+                        <span class="capitalize">{formatDate(start)}</span> —{' '}
+                        {end ? (
+                          <span class="capitalize">{formatDate(end)}</span>
+                        ) : (
+                          'Present'
+                        )}
+                        {durationText && <span> ({durationText})</span>}
+                      </small>
+                    </p>
+                    <p class="flex flex-wrap gap-1.5">
+                      {position.tools.map((tool) => (
+                        <Badge>{tool}</Badge>
+                      ))}
+                    </p>
+                    <ul>
+                      {position.tasks.map((task) => (
+                        <li>{task}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )
+              })}
             </div>
           </section>
 
           <section>
             <Title>Skills & Stack</Title>
             <ul>
-              {skills.map((skill) => <li>{skill}</li>)}
+              {skills.map((skill) => (
+                <li>{skill}</li>
+              ))}
             </ul>
           </section>
 
@@ -232,9 +231,7 @@ function calculateDuration(
                 <h3 class="mt-2 font-semibold">emmet-language-server</h3>
                 <p>A language server for emmet.io</p>
                 <div class="flex space-x-4 text-lg">
-                  <NpmLinkWithDownloads
-                    package="@olrtg/emmet-language-server"
-                  />
+                  <NpmLinkWithDownloads package="@olrtg/emmet-language-server" />
                   <GitHubLinkWithStars repo="emmet-language-server" />
                 </div>
               </div>
@@ -275,26 +272,30 @@ function calculateDuration(
           <section>
             <Title>Languages</Title>
             <p>
-              Spanish (Native speaker), English (<a
+              Spanish (Native speaker), English (
+              <a
                 href="https://www.efset.org/cert/8txjJV"
                 target="_blank"
                 rel="noreferrer"
-                class="text-link">C1 Advanced</a
-              >).
+                class="text-link"
+              >
+                C1 Advanced
+              </a>
+              ).
             </p>
           </section>
         </div>
 
-        <footer
-          class="mt-8 flex items-center justify-center space-x-4 print:hidden"
-        >
+        <footer class="mt-8 flex items-center justify-center space-x-4 print:hidden">
           <PrintButton />
 
           <a
             href="https://github.com/olrtg/resume"
             target="_blank"
-            class="text-link">Go to repo</a
+            class="text-link"
           >
+            Go to repo
+          </a>
         </footer>
       </Container>
     </div>
